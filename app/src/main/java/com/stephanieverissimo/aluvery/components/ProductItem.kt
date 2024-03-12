@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -33,6 +34,7 @@ import androidx.compose.ui.unit.sp
 import com.stephanieverissimo.aluvery.R
 import com.stephanieverissimo.aluvery.extensions.toBrazilianCurrency
 import com.stephanieverissimo.aluvery.models.Product
+import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 import com.stephanieverissimo.aluvery.ui.theme.Purple40
 import com.stephanieverissimo.aluvery.ui.theme.Teal200
 import java.math.BigDecimal
@@ -51,9 +53,14 @@ fun ProductItem(product: Product) {
             val imageHeight = 100.dp
             Box(modifier = Modifier
                 .fillMaxWidth()
-                .background(brush = Brush.horizontalGradient(listOf(Purple40, Teal200)))
+                .background(brush = Brush.horizontalGradient(listOf(
+                    MaterialTheme.colorScheme.primary,
+                    MaterialTheme.colorScheme.secondary,
+                )))
                 .height(imageHeight)) {
-                Image(painter = painterResource(product.image),
+                Image(
+                    //TODO: Adjust product image
+                    painter = painterResource(id = R.drawable.placeholder),
                       contentDescription = "Image product item",
                       contentScale = ContentScale.Crop,
                       modifier = Modifier
@@ -89,7 +96,14 @@ fun ProductItem(product: Product) {
 @Preview(showSystemUi = true)
 @Composable
 private fun ProductItemPreview() {
-    ProductItem(Product(name = LoremIpsum(50).values.first(),
-                        price = BigDecimal(12.99),
-                        image = R.drawable.placeholder))
+    AluveryTheme {
+        Surface {
+            ProductItem(
+                Product(
+                    name = LoremIpsum(50).values.first(),
+                    price = BigDecimal("14.99")
+                )
+            )
+        }
+    }
 }
