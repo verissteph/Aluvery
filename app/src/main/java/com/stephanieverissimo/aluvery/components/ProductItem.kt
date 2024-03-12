@@ -31,6 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.AsyncImage
 import com.stephanieverissimo.aluvery.R
 import com.stephanieverissimo.aluvery.extensions.toBrazilianCurrency
 import com.stephanieverissimo.aluvery.models.Product
@@ -58,16 +59,16 @@ fun ProductItem(product: Product) {
                     MaterialTheme.colorScheme.secondary,
                 )))
                 .height(imageHeight)) {
-                Image(
-                    //TODO: Adjust product image
-                    painter = painterResource(id = R.drawable.placeholder),
-                      contentDescription = "Image product item",
-                      contentScale = ContentScale.Crop,
-                      modifier = Modifier
-                          .align(Alignment.BottomCenter)
-                          .offset(y = imageHeight / 2)
-                          .size(imageHeight)
-                          .clip(CircleShape)
+                AsyncImage(
+                    model = product.image,
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .align(Alignment.BottomCenter)
+                        .offset(y = imageHeight / 2)
+                        .size(imageHeight)
+                        .clip(CircleShape),
+                    placeholder = painterResource(id = R.drawable.placeholder),
                 
                 )
             }
@@ -93,7 +94,7 @@ fun ProductItem(product: Product) {
 }
 
 
-@Preview(showSystemUi = true)
+@Preview(showBackground= true)
 @Composable
 private fun ProductItemPreview() {
     AluveryTheme {
@@ -101,7 +102,8 @@ private fun ProductItemPreview() {
             ProductItem(
                 Product(
                     name = LoremIpsum(50).values.first(),
-                    price = BigDecimal("14.99")
+                    price = BigDecimal("14.99"),
+                    image = painterResource(id = R.drawable.placeholder).toString()
                 )
             )
         }
