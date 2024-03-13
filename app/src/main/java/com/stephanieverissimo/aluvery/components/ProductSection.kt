@@ -1,13 +1,12 @@
 package com.stephanieverissimo.aluvery.components
 
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,18 +26,15 @@ fun ProductSection(title: String, products: List<Product>) {
              modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
              fontSize = 20.sp,
              fontWeight = FontWeight(400))
-        Row(
-            Modifier
-                .fillMaxWidth()
-                .horizontalScroll(rememberScrollState()),
+        LazyRow(
+            Modifier.fillMaxWidth(),
+            contentPadding = PaddingValues(horizontal = 16.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp),
             
             ) {
-            Spacer(modifier = Modifier)
-            for (p in products){
-               ProductItem(p)
+            items(products) { product ->
+                ProductItem(product)
             }
-            Spacer(modifier = Modifier)
         }
     }
 }
