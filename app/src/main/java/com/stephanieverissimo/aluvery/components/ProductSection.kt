@@ -20,10 +20,10 @@ import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 
 @Composable
-fun ProductSection(title: String, products: List<Product>) {
+fun ProductSection(title: String, products: List<Product>, modifier: Modifier = Modifier) {
     Column {
         Text(text = title,
-             modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
+             modifier = modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
              fontSize = 20.sp,
              fontWeight = FontWeight(400))
         LazyRow(

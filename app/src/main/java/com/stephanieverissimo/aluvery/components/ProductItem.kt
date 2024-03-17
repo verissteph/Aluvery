@@ -1,6 +1,5 @@
 package com.stephanieverissimo.aluvery.components
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,7 +20,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -36,16 +34,14 @@ import com.stephanieverissimo.aluvery.R
 import com.stephanieverissimo.aluvery.extensions.toBrazilianCurrency
 import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
-import com.stephanieverissimo.aluvery.ui.theme.Purple40
-import com.stephanieverissimo.aluvery.ui.theme.Teal200
 import java.math.BigDecimal
 
 @Composable
-fun ProductItem(product: Product) {
-    Surface(Modifier
-                .clip(RoundedCornerShape(15.dp))
-                .shadow(elevation = 8.dp)
-    
+fun ProductItem(product: Product, modifier: Modifier = Modifier) {
+    Surface(
+        modifier,
+        shape = RoundedCornerShape(15.dp),
+        shadowElevation = 4.dp,
     ) {
         
         Column(Modifier
@@ -63,17 +59,17 @@ fun ProductItem(product: Product) {
                     model = product.image,
                     contentDescription = null,
                     contentScale = ContentScale.Crop,
-                    modifier = Modifier
+                    modifier = modifier
                         .align(Alignment.BottomCenter)
                         .offset(y = imageHeight / 2)
                         .size(imageHeight)
                         .clip(CircleShape),
                     placeholder = painterResource(id = R.drawable.placeholder),
-                
-                )
+                    
+                    )
             }
-            Spacer(modifier = Modifier.height(imageHeight / 2))
-            Column(Modifier.padding(16.dp)) {
+            Spacer(modifier = modifier.height(imageHeight / 2))
+            Column(modifier.padding(16.dp)) {
                 Text(text = product.name,
                      maxLines = 2,
                      fontWeight = FontWeight(700),
@@ -81,7 +77,7 @@ fun ProductItem(product: Product) {
                      overflow = TextOverflow.Ellipsis)
                 Text(
                     text = product.price.toBrazilianCurrency(),
-                    Modifier.padding(top = 8.dp),
+                    modifier.padding(top = 8.dp),
                     fontWeight = FontWeight(400),
                     fontSize = 14.sp,
                     
@@ -93,19 +89,14 @@ fun ProductItem(product: Product) {
     
 }
 
-
-@Preview(showBackground= true)
+@Preview(showBackground = true)
 @Composable
 private fun ProductItemPreview() {
     AluveryTheme {
         Surface {
-            ProductItem(
-                Product(
-                    name = LoremIpsum(50).values.first(),
-                    price = BigDecimal("14.99"),
-                    image = painterResource(id = R.drawable.placeholder).toString()
-                )
-            )
+            ProductItem(Product(name = LoremIpsum(50).values.first(),
+                                price = BigDecimal("14.99"),
+                                image = painterResource(id = R.drawable.placeholder).toString()))
         }
     }
 }
