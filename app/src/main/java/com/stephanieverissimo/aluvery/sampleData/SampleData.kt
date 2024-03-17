@@ -1,5 +1,6 @@
 package com.stephanieverissimo.aluvery.sampleData
 
+import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import com.stephanieverissimo.aluvery.models.Product
 import java.math.BigDecimal
 
@@ -12,13 +13,13 @@ val sampleProductCombo = listOf(Product("#11", BigDecimal(4.99)),
                                 Product("#12", BigDecimal(5.99)),
                                 Product("#13", BigDecimal(6.99)))
 
-val sampleProductDrinks = listOf(Product("Beer", BigDecimal(12.99),  "https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg",),
+val sampleProductDrinks = listOf(Product("Beer", BigDecimal(12.99),  "https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg",description = LoremIpsum(50).values.first()),
                                  Product("Juice", BigDecimal(9.99), "https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg"),
                                  Product("Soda", BigDecimal(6.99), "https://images.pexels.com/photos/2775860/pexels-photo-2775860.jpeg"),
                                  Product("Water", BigDecimal(2.99), "https://images.pexels.com/photos/327090/pexels-photo-327090.jpeg"),)
 
 
-val sampleProducts = listOf(Product("Hambuguer", BigDecimal(12.99), "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"),
+val sampleProducts = listOf(Product("Hambuguer", BigDecimal(12.99), "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg", description = LoremIpsum(50).values.first()),
                             Product("Pizza", BigDecimal(19.99),  "https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg"),
                             Product("Fries", BigDecimal(6.99),  "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg"),
                             *sampleProductDrinks.toTypedArray(), *sampleProductCandies.toTypedArray(),
