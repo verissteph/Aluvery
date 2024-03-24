@@ -25,52 +25,91 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.stephanieverissimo.aluvery.components.CardProductItem
+import com.stephanieverissimo.aluvery.components.ProductSection
+import com.stephanieverissimo.aluvery.components.SearchedText
 import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 
 @Composable
-fun HomeScreen(sections: Map<String, List<Product>>) {
-    var text by remember { mutableStateOf("") }
+fun HomeScreen(
+    sections: Map<String,
+            List<Product>>,
+    searchedText: String = ""
+) {
     AluveryTheme {
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             Column {
-                OutlinedTextField(value = text,
-                                  onValueChange = { newValue -> text = newValue },
-                                  modifier = Modifier
-                                      .padding(16.dp)
-                                      .fillMaxWidth(),
-                                  shape = RoundedCornerShape(100),
-                                  label = {
-                                      Text("Search")
-                                      
-                                  },
-                                  placeholder = { Text(text = "What are you look for?") },
-                                  leadingIcon = {
-                                      Icon(imageVector = Icons.Default.Search,
-                                           contentDescription = "icon search")
-                                  })
-                LazyColumn(Modifier.fillMaxSize().padding(16.dp),
-                           verticalArrangement = Arrangement.spacedBy(16.dp),
-                           contentPadding = PaddingValues(bottom = 16.dp)) {
-                    items(sampleProducts) { product ->
-                        CardProductItem(
-                            product = product)
+                var text by remember { mutableStateOf(searchedText) }
+                SearchedText(
+                    searchedText = text,
+                    onSearchChange = { text = it },
+                    Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth()
+                )
+                val searchedProducts = remember(text) {
+                    if (text.isNotBlank()) {
+                        sampleProducts.filter { product ->
+                            product.name.contains(
+                                text,
+                                ignoreCase = true,
+                            ) ||
+                                    product.description?.contains(
+                                        text,
+                                        ignoreCase = true,
+                                    ) ?: false
+                        }
+                    } else emptyList()
+                }
+                LazyColumn(
+                    Modifier
+                        .fillMaxSize()
+                        .padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                    contentPadding = PaddingValues(bottom = 16.dp)
+                ) {
+                    if (text.isBlank()){
+                        for (section in sections){
+                            val title = section.key
+                            val products = section.value
+                            item { 
+                                ProductSection(title = title, products = products )
+                            }
+                        }
+                    }else{
+                        items(searchedProducts){ p ->
+                            CardProductItem(product = p, Modifier.padding(horizontal = 16.dp))
+                        }
                     }
                 }
             }
-            
+
         }
     }
 }
 
+
 @Preview(showSystemUi = true)
 @Composable
-fun HomeScreenPrev() {
+private fun HomeScreenPreview() {
     AluveryTheme {
         Surface {
             HomeScreen(sampleSections)
+        }
+    }
+}
+
+@Preview
+@Composable
+fun HomeScreenWithSearchTextPreview() {
+    AluveryTheme {
+        Surface {
+            HomeScreen(
+                sampleSections,
+                searchedText = "a",
+            )
         }
     }
 }
