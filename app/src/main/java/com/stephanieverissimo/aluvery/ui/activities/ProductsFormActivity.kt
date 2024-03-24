@@ -3,6 +3,7 @@ package com.stephanieverissimo.aluvery.ui.activities
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
@@ -41,12 +42,13 @@ fun ProductsFormScreen() {
     Column(
         Modifier
             .fillMaxWidth()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Text(
             text = "Product Creation",
             Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
+                .fillMaxWidth(),
             fontSize = 28.sp,
         )
 
@@ -56,8 +58,7 @@ fun ProductsFormScreen() {
         TextField(
             value = url, onValueChange = { url = it },
             Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
+                .fillMaxWidth(),
             label = { Text("Url")}
         )
 
@@ -68,8 +69,7 @@ fun ProductsFormScreen() {
         TextField(
             value = name, onValueChange = { name = it },
             Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
+                .fillMaxWidth(),
             label = { Text("Name")}
         )
 
@@ -79,8 +79,7 @@ fun ProductsFormScreen() {
         TextField(
             value = price, onValueChange = { price = it },
             Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
+                .fillMaxWidth(),
             label = { Text("Price")}
         )
 
@@ -91,15 +90,13 @@ fun ProductsFormScreen() {
             value = description, onValueChange = { description = it },
             Modifier
                 .fillMaxWidth()
-                .padding(16.dp)
                 .heightIn(min = 100.dp),
             label = { Text("Description")}
         )
 
         Button(onClick = { },
             Modifier
-                .fillMaxWidth()
-                .padding(16.dp)) {
+                .fillMaxWidth()) {
             Text(text = "Save")
 
         }
