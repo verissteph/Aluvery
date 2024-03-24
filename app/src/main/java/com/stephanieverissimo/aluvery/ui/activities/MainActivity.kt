@@ -1,4 +1,4 @@
-package com.stephanieverissimo.aluvery
+package com.stephanieverissimo.aluvery.ui.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
