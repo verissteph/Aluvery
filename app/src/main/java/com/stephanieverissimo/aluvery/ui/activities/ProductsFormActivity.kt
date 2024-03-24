@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Surface
@@ -25,6 +26,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.min
@@ -87,7 +90,11 @@ fun ProductsFormScreen() {
             value = url, onValueChange = { url = it },
             Modifier
                 .fillMaxWidth(),
-            label = { Text("Url") }
+            label = { Text("Url") },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Uri,
+                imeAction = ImeAction.Next
+            )
         )
 
 
@@ -98,7 +105,11 @@ fun ProductsFormScreen() {
             value = name, onValueChange = { name = it },
             Modifier
                 .fillMaxWidth(),
-            label = { Text("Name") }
+            label = { Text("Name") },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Text,
+                imeAction = ImeAction.Next
+            )
         )
 
         var price by remember {
@@ -108,7 +119,11 @@ fun ProductsFormScreen() {
             value = price, onValueChange = { price = it },
             Modifier
                 .fillMaxWidth(),
-            label = { Text("Price") }
+            label = { Text("Price") },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Decimal,
+                imeAction = ImeAction.Next
+            )
         )
 
         var description by remember {
@@ -119,7 +134,11 @@ fun ProductsFormScreen() {
             Modifier
                 .fillMaxWidth()
                 .heightIn(min = 100.dp),
-            label = { Text("Description") }
+            label = { Text("Description") },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Text,
+                imeAction = ImeAction.Next
+            )
         )
 
         Button(
