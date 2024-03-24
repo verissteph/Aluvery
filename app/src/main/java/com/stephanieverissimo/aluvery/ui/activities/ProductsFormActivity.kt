@@ -27,6 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -36,8 +37,10 @@ import coil.compose.AsyncImage
 import com.stephanieverissimo.aluvery.R
 import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
+import java.lang.IllegalArgumentException
 import java.lang.NumberFormatException
 import java.math.BigDecimal
+import java.text.DecimalFormat
 
 class ProductsFormActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -108,15 +111,30 @@ fun ProductsFormScreen() {
             label = { Text("Name") },
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text,
-                imeAction = ImeAction.Next
+                imeAction = ImeAction.Next,
+                capitalization = KeyboardCapitalization.Words
             )
         )
 
         var price by remember {
             mutableStateOf("")
         }
+        val formatter = remember {
+            DecimalFormat("#.##")
+        }
+
         TextField(
-            value = price, onValueChange = { price = it },
+            value = price, onValueChange = {
+                try {
+                    price = formatter.format(BigDecimal(it))
+                } catch (e: IllegalArgumentException) {
+                    if (price.isEmpty()) {
+                        price = it
+                    }
+
+                }
+
+            },
             Modifier
                 .fillMaxWidth(),
             label = { Text("Price") },
@@ -137,7 +155,8 @@ fun ProductsFormScreen() {
             label = { Text("Description") },
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text,
-                imeAction = ImeAction.Next
+                imeAction = ImeAction.Next,
+                capitalization = KeyboardCapitalization.Sentences
             )
         )
 
