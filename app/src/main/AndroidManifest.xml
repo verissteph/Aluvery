@@ -13,10 +13,13 @@
         android:theme="@style/Theme.Aluvery"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Aluvery">
+        </activity>
+        <activity android:name=".ui.activities.ProductsFormActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
