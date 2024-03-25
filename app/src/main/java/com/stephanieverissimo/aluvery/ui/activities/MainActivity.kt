@@ -14,32 +14,48 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.stephanieverissimo.aluvery.dao.ProductDao
+import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
+import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.screens.HomeScreen
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 
 class MainActivity : ComponentActivity() {
+    private val dao = ProductDao
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            App(onFabClick = {
-                startActivity(Intent(this, ProductsFormActivity::class.java))
-            })
+          App(onFabClick = {
+              startActivity(Intent(
+                  this,
+                  ProductsFormActivity::class.java
+              ))
+          }){
+              val sections = mapOf(
+                  "All products" to dao.products,
+                  "Promotions" to sampleProductDrinks + sampleProductCandies,
+                  "Candies" to sampleProductCandies,
+                  "Drinks" to sampleProductDrinks
+              )
+              HomeScreen(sections = sections)
+          }
         }
     }
 }
 
 @Composable
-fun App(onFabClick: () -> Unit = {}) {
+fun App(onFabClick: () -> Unit = {}, content: @Composable ()->Unit = {}) {
     AluveryTheme {
         Surface {
             Scaffold(floatingActionButton = {
                 FloatingActionButton(onClick = onFabClick) {
                     Icon(imageVector = Icons.Default.Add, contentDescription = null)
                 }
+
             }) { paddingValues ->
                 Box(modifier = Modifier.padding(paddingValues)) {
-                    HomeScreen(sections = sampleSections)
+                   content()
                 }
             }
 
