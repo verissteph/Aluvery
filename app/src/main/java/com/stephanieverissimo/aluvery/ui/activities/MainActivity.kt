@@ -14,6 +14,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.stephanieverissimo.aluvery.dao.ProductDao
 import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
 import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
@@ -61,4 +62,13 @@ fun App(onFabClick: () -> Unit = {}, content: @Composable ()->Unit = {}) {
 
         }
     }
+}
+
+@Preview
+@Composable
+private fun AppPreview() {
+    App(){
+        HomeScreen(sections = sampleSections)
+    }
+
 }

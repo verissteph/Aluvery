@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.min
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.stephanieverissimo.aluvery.R
+import com.stephanieverissimo.aluvery.dao.ProductDao
 import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 import java.lang.IllegalArgumentException
@@ -43,12 +44,16 @@ import java.math.BigDecimal
 import java.text.DecimalFormat
 
 class ProductsFormActivity : ComponentActivity() {
+    private val dao = ProductDao()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             AluveryTheme {
                 Surface {
-                    ProductsFormScreen()
+                    ProductsFormScreen(onSaveClick = { product ->
+                        dao.save(product)
+                       finish()
+                    })
                 }
             }
         }
@@ -56,7 +61,7 @@ class ProductsFormActivity : ComponentActivity() {
 }
 
 @Composable
-fun ProductsFormScreen() {
+fun ProductsFormScreen(onSaveClick: (Product)-> Unit = {}) {
     Column(
         Modifier
             .fillMaxWidth()
@@ -175,6 +180,8 @@ fun ProductsFormScreen() {
                     description = description,
                 )
                 Log.i("ProductForm", "ProductForm: $product")
+                onSaveClick(product)
+
             },
             Modifier
                 .fillMaxWidth()
