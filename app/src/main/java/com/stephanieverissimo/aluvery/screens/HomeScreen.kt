@@ -32,6 +32,30 @@ import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 
+class HomeScreenUiState(private val searchedText: String = "") {
+    var text by mutableStateOf(searchedText)
+
+    val searchedProducts
+        get() =
+            if (text.isNotBlank()) {
+                sampleProducts.filter { product ->
+                    product.name.contains(
+                        text,
+                        ignoreCase = true,
+                    ) ||
+                            product.description?.contains(
+                                text,
+                                ignoreCase = true,
+                            ) ?: false
+                }
+            } else emptyList()
+
+    fun isShowSections(): Boolean {
+        return text.isBlank()
+    }
+
+}
+
 @Composable
 fun HomeScreen(
     sections: Map<String,
@@ -39,55 +63,49 @@ fun HomeScreen(
     searchedText: String = ""
 ) {
     AluveryTheme {
+        val state = remember {
+            HomeScreenUiState(searchedText)
+        }
+        val text = state.text
+        val searchedProducts = remember(text) {
+            state.searchedProducts
+        }
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             Column {
-                var text by remember { mutableStateOf(searchedText) }
                 SearchedText(
                     searchedText = text,
-                    onSearchChange = { text = it },
+                    onSearchChange = { state.text = it },
                     Modifier
                         .padding(16.dp)
                         .fillMaxWidth()
                 )
-                val searchedProducts = remember(text) {
-                    if (text.isNotBlank()) {
-                        sampleProducts.filter { product ->
-                            product.name.contains(
-                                text,
-                                ignoreCase = true,
-                            ) ||
-                                    product.description?.contains(
-                                        text,
-                                        ignoreCase = true,
-                                    ) ?: false
+
+            }
+            LazyColumn(
+                Modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp),
+                contentPadding = PaddingValues(bottom = 16.dp)
+            ) {
+                if (state.isShowSections()) {
+                    for (section in sections) {
+                        val title = section.key
+                        val products = section.value
+                        item {
+                            ProductSection(title = title, products = products)
                         }
-                    } else emptyList()
-                }
-                LazyColumn(
-                    Modifier
-                        .fillMaxSize()
-                        .padding(16.dp),
-                    verticalArrangement = Arrangement.spacedBy(16.dp),
-                    contentPadding = PaddingValues(bottom = 16.dp)
-                ) {
-                    if (text.isBlank()){
-                        for (section in sections){
-                            val title = section.key
-                            val products = section.value
-                            item { 
-                                ProductSection(title = title, products = products )
-                            }
-                        }
-                    }else{
-                        items(searchedProducts){ p ->
-                            CardProductItem(product = p, Modifier.padding(horizontal = 16.dp))
-                        }
+                    }
+                } else {
+                    items(searchedProducts) { p ->
+                        CardProductItem(product = p, Modifier.padding(horizontal = 16.dp))
                     }
                 }
             }
-
         }
+
     }
+}
 }
 
 
