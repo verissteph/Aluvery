@@ -31,27 +31,30 @@ import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
+class HomeScreenUiState(searchText: String = "") {
 
-class HomeScreenUiState(private val searchedText: String = "") {
-    var text by mutableStateOf(searchedText)
+    var text by mutableStateOf(searchText)
+        private set
 
-    val searchedProducts
-        get() =
-            if (text.isNotBlank()) {
-                sampleProducts.filter { product ->
-                    product.name.contains(
-                        text,
-                        ignoreCase = true,
-                    ) ||
-                            product.description?.contains(
-                                text,
-                                ignoreCase = true,
-                            ) ?: false
-                }
-            } else emptyList()
-
+    val searchedProducts get() =
+        if (text.isNotBlank()) {
+            sampleProducts.filter { product ->
+                product.name.contains(
+                    text,
+                    ignoreCase = true,
+                ) ||
+                        product.description?.contains(
+                            text,
+                            ignoreCase = true,
+                        ) ?: false
+            }
+        } else emptyList()
     fun isShowSections(): Boolean {
         return text.isBlank()
+    }
+
+    val onSearchChange: (String) -> Unit = { searchText ->
+        text = searchText
     }
 
 }
@@ -60,52 +63,53 @@ class HomeScreenUiState(private val searchedText: String = "") {
 fun HomeScreen(
     sections: Map<String,
             List<Product>>,
-    searchedText: String = ""
+    state: HomeScreenUiState = HomeScreenUiState()
 ) {
     AluveryTheme {
-        val state = remember {
-            HomeScreenUiState(searchedText)
-        }
         val text = state.text
         val searchedProducts = remember(text) {
             state.searchedProducts
         }
-        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.background
+        ) {
             Column {
                 SearchedText(
                     searchedText = text,
-                    onSearchChange = { state.text = it },
+                    onSearchChange = state.onSearchChange,
                     Modifier
                         .padding(16.dp)
                         .fillMaxWidth()
                 )
 
-            }
-            LazyColumn(
-                Modifier
-                    .fillMaxSize()
-                    .padding(16.dp),
-                verticalArrangement = Arrangement.spacedBy(16.dp),
-                contentPadding = PaddingValues(bottom = 16.dp)
-            ) {
-                if (state.isShowSections()) {
-                    for (section in sections) {
-                        val title = section.key
-                        val products = section.value
-                        item {
-                            ProductSection(title = title, products = products)
+                LazyColumn(
+                    Modifier
+                        .fillMaxSize()
+                        .padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                    contentPadding = PaddingValues(bottom = 16.dp)
+                ) {
+                    if (state.isShowSections()) {
+                        for (section in sections) {
+                            val title = section.key
+                            val products = section.value
+                            item {
+                                ProductSection(title = title, products = products)
+                            }
                         }
-                    }
-                } else {
-                    items(searchedProducts) { p ->
-                        CardProductItem(product = p, Modifier.padding(horizontal = 16.dp))
+                    } else {
+                        items(searchedProducts) { p ->
+                            CardProductItem(
+                                product = p,
+                            )
+                        }
                     }
                 }
             }
-        }
 
+        }
     }
-}
 }
 
 
@@ -126,7 +130,7 @@ fun HomeScreenWithSearchTextPreview() {
         Surface {
             HomeScreen(
                 sampleSections,
-                searchedText = "a",
+                state = HomeScreenUiState(searchText = "a"),
             )
         }
     }
