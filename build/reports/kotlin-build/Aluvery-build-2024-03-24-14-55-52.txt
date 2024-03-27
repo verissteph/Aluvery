@@ -1,0 +1,269 @@
+Gradle start parameters:
+  tasks = [:app:assembleDebug]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.enableStableIds: true, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.build.api: 34, android.injected.build.abi: arm64-v8a, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Time metrics:
+  Total Gradle task time: 2.27 s
+  Spent time before task action: 0.01 s
+  Task action before worker execution: 0.04 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.71 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.70 s
+      Incremental compilation in daemon: 0.67 s
+        Calculate initial dirty sources set: 0.01 s
+          Detect removed classes: 0.01 s
+        Update caches: 0.01 s
+        Sources compilation round: 0.56 s
+          Compiler initialization time: 0.05 s
+          Compiler code analysis: 0.24 s
+          Compiler code generation: 0.11 s
+        Shrink and save current classpath snapshot after compilation: 0.04 s
+          Shrink current classpath snapshot incrementally: 0.04 s
+            Load current classpath snapshot: 0.02 s
+            Load shrunk current classpath snapshot against previous lookups: 0.00 s
+          Save shrunk current classpath snapshot: 0.00 s
+  Start gradle worker: 0.00 s
+
+Size metrics:
+  Total size of the cache directory: 733.5 KB
+    ABI snapshot size: 8.4 KB
+  Increase memory usage: 4.6 MB
+  Total memory usage at the end of build: 60.2 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 51
+    Number of lines for code generation: 51
+    Analysis lines per second: 211
+    Code generation lines per second: 485
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 56.8 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache hits when loading classpath entry snapshots: 53
+  Start time of task action: 2024-03-24T17:55:50
+
+
+Total time for Kotlin tasks: 0.81 s (35.6 % of all tasks time)
+Time  |% of Kotlin time|Task                   
+0.81 s|100.0 %         |:app:compileDebugKotlin
+
+Task ':app:compileDebugKotlin' finished in 0.81 s
+Task info:
+  Kotlin language version: 1.9
+Compilation log for task ':app:compileDebugKotlin':
+  Use module detection: true
+  Classpath changes info passed from Gradle task: NoChanges
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.MainActivityKt.App.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt.lambda-2.1)
+  Process SignatureChanged(fqName = .kotlin_module)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.MainActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.MainActivity)
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ComposableSingletons$MainActivityKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/MainActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ComposableSingletons$MainActivityKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/MainActivityKt$App$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/MainActivity.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ComposableSingletons$MainActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ComposableSingletons$MainActivityKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/MainActivity.kt
+  Compile iteration:
+    app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt <- was modified since last time
+    app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt <- was modified since last time
+  Process Removed(fqName = com.stephanieverissimo.aluvery, names = [App])
+  Process MembersChanged(fqName = com.stephanieverissimo.aluvery.ui.activities, names = [App])
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivity)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.MainActivityKt.App.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ComposableSingletons.MainActivityKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.MainActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.MainActivity)
+  Process ParentsChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivity)
+  Process ParentsChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity)
+  Process ParentsChanged(fqName = com.stephanieverissimo.aluvery.MainActivity)
+  [ClasspathSnapshot] Shrunk current classpath snapshot after compilation (shrink mode = ChangedLookupsUnchangedClasspath), retained 207 / 12757 classes
+  Incremental compilation completed
+Time metrics:
+  Total Gradle task time: 0.81 s
+  Spent time before task action: 0.01 s
+  Task action before worker execution: 0.04 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.71 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.70 s
+      Incremental compilation in daemon: 0.67 s
+        Calculate initial dirty sources set: 0.01 s
+          Detect removed classes: 0.01 s
+        Update caches: 0.01 s
+        Sources compilation round: 0.56 s
+          Compiler initialization time: 0.05 s
+          Compiler code analysis: 0.24 s
+          Compiler code generation: 0.11 s
+        Shrink and save current classpath snapshot after compilation: 0.04 s
+          Shrink current classpath snapshot incrementally: 0.04 s
+            Load current classpath snapshot: 0.02 s
+            Load shrunk current classpath snapshot against previous lookups: 0.00 s
+          Save shrunk current classpath snapshot: 0.00 s
+  Start gradle worker: 0.00 s
+Size metrics:
+  Total size of the cache directory: 733.5 KB
+    ABI snapshot size: 8.4 KB
+  Increase memory usage: 4.6 MB
+  Total memory usage at the end of build: 60.2 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 51
+    Number of lines for code generation: 51
+    Analysis lines per second: 211
+    Code generation lines per second: 485
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 56.8 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache hits when loading classpath entry snapshots: 53
+  Start time of task action: 2024-03-24T17:55:50
+GC metrics:
+  PS MarkSweep:
+    GC count: 0
+    GC time: 0.00 s
+  PS Scavenge:
+    GC count: 1
+    GC time: 0.02 s
+
+Task ':app:processDebugResources' finished in 0.68 s
+Time metrics:
+  Total Gradle task time: 0.68 s
+
+Task ':app:mergeDebugJavaResource' finished in 0.21 s
+Time metrics:
+  Total Gradle task time: 0.21 s
+
+Task ':app:processDebugMainManifest' finished in 0.17 s
+Time metrics:
+  Total Gradle task time: 0.17 s
+
+Task ':app:dexBuilderDebug' finished in 0.14 s
+Time metrics:
+  Total Gradle task time: 0.14 s
+
+Task ':app:packageDebug' finished in 0.11 s
+Time metrics:
+  Total Gradle task time: 0.11 s
+
+Task ':app:checkDebugAarMetadata' finished in 0.04 s
+Time metrics:
+  Total Gradle task time: 0.04 s
+
+Task ':app:processDebugManifestForPackage' finished in 0.04 s
+Time metrics:
+  Total Gradle task time: 0.04 s
+
+Task ':app:mergeProjectDexDebug' finished in 0.02 s
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task ':app:processDebugManifest' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:checkDebugDuplicateClasses' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:processDebugJavaRes' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:mergeExtDexDebug' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:mapDebugSourceSetPaths' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugAssets' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:parseDebugLocalResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugShaders' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugNativeLibs' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:extractDeepLinksDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:javaPreCompileDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeLibDexDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:compileDebugJavaWithJavac' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugVariantModel' finished in 0.00 s
+
+Task ':app:preBuild' finished in 0.00 s
+
+Task ':app:preDebugBuild' finished in 0.00 s
+
+Task ':app:mergeDebugNativeDebugMetadata' was skipped: NO-SOURCE
+
+Task ':app:generateDebugResValues' finished in 0.00 s
+
+Task ':app:generateDebugResources' finished in 0.00 s
+
+Task ':app:packageDebugResources' finished in 0.00 s
+
+Task ':app:createDebugCompatibleScreenManifests' finished in 0.00 s
+
+Task ':app:compileDebugShaders' was skipped: NO-SOURCE
+
+Task ':app:generateDebugAssets' finished in 0.00 s
+
+Task ':app:compressDebugAssets' finished in 0.00 s
+
+Task ':app:desugarDebugFileDependencies' finished in 0.00 s
+
+Task ':app:mergeDebugJniLibFolders' finished in 0.00 s
+
+Task ':app:stripDebugDebugSymbols' was skipped: NO-SOURCE
+
+Task ':app:validateSigningDebug' finished in 0.00 s
+
+Task ':app:writeDebugAppMetadata' finished in 0.00 s
+
+Task ':app:writeDebugSigningConfigVersions' finished in 0.00 s
+
+Task ':app:createDebugApkListingFileRedirect' finished in 0.00 s
+
+Task ':app:assembleDebug' finished in 0.00 s
+

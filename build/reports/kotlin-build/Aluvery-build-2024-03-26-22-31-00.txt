@@ -1,0 +1,216 @@
+Gradle start parameters:
+  tasks = [:app:assembleDebug]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.enableStableIds: true, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.build.api: 34, android.injected.build.abi: arm64-v8a, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Build failed: [Execution failed for task ':app:compileDebugKotlin'.]
+
+Time metrics:
+  Total Gradle task time: 0.67 s
+  Spent time before task action: 0.02 s
+  Task action before worker execution: 0.05 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.41 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.41 s
+      Incremental compilation in daemon: 0.36 s
+        Calculate initial dirty sources set: 0.01 s
+          Detect removed classes: 0.01 s
+        Sources compilation round: 0.33 s
+          Compiler initialization time: 0.05 s
+          Compiler code analysis: 0.28 s
+
+Size metrics:
+  Total size of the cache directory: 1.4 MB
+    ABI snapshot size: 1.4 KB
+  Increase memory usage: -55303480 B
+  Total memory usage at the end of build: 174.0 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 110
+    Analysis lines per second: 392
+  Start time of task action: 2024-03-27T01:30:59
+
+
+Total time for Kotlin tasks: 0.58 s (87.0 % of all tasks time)
+Time  |% of Kotlin time|Task                   
+0.58 s|100.0 %         |:app:compileDebugKotlin
+
+Task ':app:compileDebugKotlin' finished in 0.58 s
+Task info:
+  Kotlin language version: 1.9
+Compilation log for task ':app:compileDebugKotlin':
+  Use module detection: true
+  Classpath changes info passed from Gradle task: NoChanges
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.App.2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.App.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.App.3)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.App.2.1.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.App.2.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.App.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.MainActivityKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivityKt.AppPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity.onCreate.1.2.state.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.MainActivityKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.MainActivityKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity.onCreate.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity.onCreate.1.2)
+  Process SignatureChanged(fqName = .kotlin_module)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity.onCreate.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.MainActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.MainActivity.onCreate.1.2.containsInNameOrDescription.1)
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity$onCreate$1$2$state$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity$onCreate$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$AppPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity$onCreate$1$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity$onCreate$1$2$containsInNameOrDescription$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$2$1$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity$onCreate$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$2$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Compile iteration:
+    app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt <- was modified since last time
+  Incremental compilation completed
+Time metrics:
+  Total Gradle task time: 0.58 s
+  Spent time before task action: 0.02 s
+  Task action before worker execution: 0.05 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.41 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.41 s
+      Incremental compilation in daemon: 0.36 s
+        Calculate initial dirty sources set: 0.01 s
+          Detect removed classes: 0.01 s
+        Sources compilation round: 0.33 s
+          Compiler initialization time: 0.05 s
+          Compiler code analysis: 0.28 s
+Size metrics:
+  Total size of the cache directory: 1.4 MB
+    ABI snapshot size: 1.4 KB
+  Increase memory usage: -55303480 B
+  Total memory usage at the end of build: 174.0 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 110
+    Analysis lines per second: 392
+  Start time of task action: 2024-03-27T01:30:59
+GC metrics:
+  PS MarkSweep:
+    GC count: 0
+    GC time: 0.00 s
+  PS Scavenge:
+    GC count: 1
+    GC time: 0.01 s
+
+Task ':app:checkDebugAarMetadata' finished in 0.04 s
+Time metrics:
+  Total Gradle task time: 0.04 s
+
+Task ':app:processDebugResources' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:mergeExtDexDebug' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:mapDebugSourceSetPaths' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:processDebugMainManifest' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:checkDebugDuplicateClasses' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugNativeLibs' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:parseDebugLocalResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugAssets' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:packageDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:extractDeepLinksDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugShaders' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:compileDebugShaders' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeLibDexDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:writeDebugSigningConfigVersions' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugVariantModel' finished in 0.00 s
+
+Task ':app:preBuild' finished in 0.00 s
+
+Task ':app:preDebugBuild' finished in 0.00 s
+
+Task ':app:mergeDebugNativeDebugMetadata' was skipped: NO-SOURCE
+
+Task ':app:generateDebugResValues' finished in 0.00 s
+
+Task ':app:generateDebugResources' finished in 0.00 s
+
+Task ':app:createDebugCompatibleScreenManifests' finished in 0.00 s
+
+Task ':app:processDebugManifest' finished in 0.00 s
+
+Task ':app:processDebugManifestForPackage' finished in 0.00 s
+
+Task ':app:javaPreCompileDebug' finished in 0.00 s
+
+Task ':app:generateDebugAssets' finished in 0.00 s
+
+Task ':app:compressDebugAssets' finished in 0.00 s
+
+Task ':app:desugarDebugFileDependencies' finished in 0.00 s
+
+Task ':app:mergeDebugJniLibFolders' finished in 0.00 s
+
+Task ':app:stripDebugDebugSymbols' was skipped: NO-SOURCE
+
+Task ':app:validateSigningDebug' finished in 0.00 s
+
+Task ':app:writeDebugAppMetadata' finished in 0.00 s
+

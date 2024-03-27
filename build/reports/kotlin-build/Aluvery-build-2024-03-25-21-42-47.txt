@@ -1,0 +1,187 @@
+Gradle start parameters:
+  tasks = [:app:compileDebugSources]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Time metrics:
+  Total Gradle task time: 0.55 s
+  Spent time before task action: 0.01 s
+  Task action before worker execution: 0.04 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.39 s
+    Connect to Kotlin daemon: 0.00 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.39 s
+      Incremental compilation in daemon: 0.37 s
+        Calculate initial dirty sources set: 0.00 s
+          Detect removed classes: 0.00 s
+        Update caches: 0.01 s
+        Sources compilation round: 0.31 s
+          Compiler initialization time: 0.04 s
+          Compiler code analysis: 0.14 s
+          Compiler code generation: 0.03 s
+
+Size metrics:
+  Total size of the cache directory: 1.2 MB
+    ABI snapshot size: 49 B
+  Increase memory usage: 10.7 MB
+  Total memory usage at the end of build: 169.2 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 138
+    Number of lines for code generation: 138
+    Analysis lines per second: 958
+    Code generation lines per second: 4058
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 63.9 KB
+  Start time of task action: 2024-03-26T00:42:47
+
+
+Total time for Kotlin tasks: 0.50 s (91.1 % of all tasks time)
+Time  |% of Kotlin time|Task                   
+0.50 s|100.0 %         |:app:compileDebugKotlin
+
+Task ':app:compileDebugKotlin' finished in 0.50 s
+Task info:
+  Kotlin language version: 1.9
+Compilation log for task ':app:compileDebugKotlin':
+  Use module detection: true
+  Classpath changes info passed from Gradle task: NoChanges
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenUiState.onSearchChange.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1.invoke..inlined.items.default.3)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1.invoke..inlined.items.default.4)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1.invoke..inlined.items.default.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1.invoke..inlined.items.default.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreenPreview.1)
+  Process SignatureChanged(fqName = .kotlin_module)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreenWithSearchTextPreview.1)
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$invoke$$inlined$items$default$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$invoke$$inlined$items$default$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$invoke$$inlined$items$default$4.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenUiState$onSearchChange$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenUiState.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreenPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$invoke$$inlined$items$default$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreenWithSearchTextPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Compile iteration:
+    app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt <- was modified since last time
+  [ClasspathSnapshot] Shrunk current classpath snapshot after compilation (shrink mode = UnchangedLookupsUnchangedClasspath), no updates since previous run
+  Incremental compilation completed
+Time metrics:
+  Total Gradle task time: 0.50 s
+  Spent time before task action: 0.01 s
+  Task action before worker execution: 0.04 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.39 s
+    Connect to Kotlin daemon: 0.00 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.39 s
+      Incremental compilation in daemon: 0.37 s
+        Calculate initial dirty sources set: 0.00 s
+          Detect removed classes: 0.00 s
+        Update caches: 0.01 s
+        Sources compilation round: 0.31 s
+          Compiler initialization time: 0.04 s
+          Compiler code analysis: 0.14 s
+          Compiler code generation: 0.03 s
+Size metrics:
+  Total size of the cache directory: 1.2 MB
+    ABI snapshot size: 49 B
+  Increase memory usage: 10.7 MB
+  Total memory usage at the end of build: 169.2 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 138
+    Number of lines for code generation: 138
+    Analysis lines per second: 958
+    Code generation lines per second: 4058
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 63.9 KB
+  Start time of task action: 2024-03-26T00:42:47
+GC metrics:
+  PS MarkSweep:
+    GC count: 0
+    GC time: 0.00 s
+  PS Scavenge:
+    GC count: 1
+    GC time: 0.01 s
+
+Task ':app:checkDebugAarMetadata' finished in 0.03 s
+Time metrics:
+  Total Gradle task time: 0.03 s
+
+Task ':app:processDebugResources' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:processDebugMainManifest' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mapDebugSourceSetPaths' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:packageDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:parseDebugLocalResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:extractDeepLinksDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:preBuild' finished in 0.00 s
+
+Task ':app:preDebugBuild' finished in 0.00 s
+
+Task ':app:generateDebugResValues' finished in 0.00 s
+
+Task ':app:generateDebugResources' finished in 0.00 s
+
+Task ':app:createDebugCompatibleScreenManifests' finished in 0.00 s
+
+Task ':app:processDebugManifest' finished in 0.00 s
+
+Task ':app:processDebugManifestForPackage' finished in 0.00 s
+
+Task ':app:javaPreCompileDebug' finished in 0.00 s
+
+Task ':app:compileDebugJavaWithJavac' was skipped: NO-SOURCE
+
+Task ':app:compileDebugSources' finished in 0.00 s
+

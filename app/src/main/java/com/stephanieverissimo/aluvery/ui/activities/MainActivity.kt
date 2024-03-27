@@ -13,19 +13,25 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.stephanieverissimo.aluvery.dao.ProductDao
+import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
 import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
+import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.screens.HomeScreen
 import com.stephanieverissimo.aluvery.screens.HomeScreenUiState
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 
 class MainActivity : ComponentActivity() {
-    private val dao = ProductDao
+    private val dao = ProductDao()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -35,16 +41,43 @@ class MainActivity : ComponentActivity() {
                   ProductsFormActivity::class.java
               ))
           }){
+              val products = dao.products()
               val sections = mapOf(
-                  "All products" to dao.products,
+                  "All products" to products,
                   "Promotions" to sampleProductDrinks + sampleProductCandies,
                   "Candies" to sampleProductCandies,
                   "Drinks" to sampleProductDrinks
               )
-              val state = remember {
-                  HomeScreenUiState()
+              var text by remember {
+                  mutableStateOf("")
               }
-              HomeScreen(sections = sections, state)
+              fun containsInNameOrDescription() = { product: Product ->
+                  product.name.contains(
+                      text,
+                      ignoreCase = true,
+                  ) || product.description?.contains(
+                      text,
+                      ignoreCase = true,
+                  ) ?: false
+              }
+              val searchedProducts = remember(text, products) {
+                  if (text.isNotBlank()) {
+                      sampleProducts.filter(containsInNameOrDescription()) +
+                              products.filter(containsInNameOrDescription())
+                  } else emptyList()
+              }
+
+              val state = remember(products, text) {
+                  HomeScreenUiState(
+                      sections = sections,
+                      searchedProducts = searchedProducts,
+                      searchText = text,
+                      onSearchChange = {
+                          text = it
+                      }
+                  )
+              }
+              HomeScreen(state)
           }
         }
     }
@@ -73,7 +106,7 @@ fun App(onFabClick: () -> Unit = {}, content: @Composable ()->Unit = {}) {
 @Composable
 private fun AppPreview() {
     App(){
-        HomeScreen(sections = sampleSections)
+        HomeScreen(HomeScreenUiState(sections = sampleSections))
     }
 
 }

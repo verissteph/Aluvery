@@ -1,0 +1,17 @@
+Gradle start parameters:
+  tasks = [clean]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Time metrics:
+  Total Gradle task time: 0.24 s
+
+
+
+No Kotlin task was run
+Task ':app:clean' finished in 0.24 s
+Time metrics:
+  Total Gradle task time: 0.24 s
+

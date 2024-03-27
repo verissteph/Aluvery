@@ -1,0 +1,916 @@
+Gradle start parameters:
+  tasks = [:app:assembleDebug]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.enableStableIds: true, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.build.api: 34, android.injected.build.abi: arm64-v8a,armeabi-v7a,armeabi, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Time metrics:
+  Total Gradle task time: 48.65 s
+  Spent time before task action: 4.29 s
+  Task action before worker execution: 0.06 s
+  Run compilation in Gradle worker: 4.11 s
+    Connect to Kotlin daemon: 0.40 s
+    Run compilation: 3.69 s
+      Incremental compilation in daemon: 3.45 s
+        Update caches: 0.06 s
+        Sources compilation round: 3.22 s
+          Compiler initialization time: 0.26 s
+          Compiler code analysis: 1.63 s
+          Compiler code generation: 0.82 s
+        Shrink and save current classpath snapshot after compilation: 0.09 s
+          Shrink current classpath snapshot non-incrementally: 0.09 s
+            Load current classpath snapshot: 0.05 s
+          Save shrunk current classpath snapshot: 0.00 s
+  Start gradle worker: 0.01 s
+  Classpath entry snapshot transform: 6.39 s
+    Load classes (paths only): 0.02 s
+    Snapshot classes: 6.20 s
+      Load contents of classes: 1.07 s
+      Snapshot Kotlin classes: 3.99 s
+      Snapshot Java classes: 0.33 s
+    Save classpath entry snapshot: 0.10 s
+
+Size metrics:
+  Total size of the cache directory: 342.5 KB
+    ABI snapshot size: 49 B
+  Increase memory usage: 209.1 MB
+  Total memory usage at the end of build: 276.8 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 811
+    Number of lines for code generation: 811
+    Analysis lines per second: 498
+    Code generation lines per second: 984
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 54
+    Size of jar classpath entry: 74.3 MB
+    Size of jar classpath entry's snapshot: 4.5 MB
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 54
+    Size of classpath snapshot: 4.5 MB
+    Size of shrunk classpath snapshot: 51.3 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache misses when loading classpath entry snapshots: 54
+  Start time of task action: 2024-03-23T19:54:02
+
+Build attributes:
+  REBUILD_REASON: Unknown Gradle changes
+
+Total time for Kotlin tasks: 14.93 s (27.1 % of all tasks time)
+Time  |% of Kotlin time|Task                                                                                                                                                                                                          
+8.51 s|57.0 %          |:app:compileDebugKotlin                                                                                                                                                                                       
+0.56 s|3.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/0caebbeb034477bcb1482040f6d15bca/transformed/jetified-material3-release-api.jar                                     
+0.55 s|3.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/9a5ea5a1c9f99968da184da1611a1068/transformed/jetified-foundation-release-api.jar                                    
+0.53 s|3.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Library/Android/sdk/platforms/android-34/android.jar                                                                                            
+0.48 s|3.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/72e9530fb564e840675483940208c0fe/transformed/jetified-ui-release-api.jar                                            
+0.48 s|3.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/30debcd39d5662e5384a16ff7a22adbe/transformed/jetified-kotlin-stdlib-1.9.22.jar                                      
+0.33 s|2.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5e63e0759c371846136f1df5161813e3/transformed/jetified-ui-text-release-api.jar                                       
+0.30 s|2.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/46c3509953ac2b8f74a6de56269701d6/transformed/jetified-material-release-api.jar                                      
+0.30 s|2.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/04277dbc63794fce255d3708c8955cb5/transformed/jetified-runtime-release-api.jar                                       
+0.26 s|1.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/ac6632a6a9c9f9e733c39e97c9e1c475/transformed/jetified-collection-jvm-1.4.0.jar                                      
+0.26 s|1.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/35cc7f89061cda1291facfc3e70f4165/transformed/jetified-kotlinx-coroutines-core-jvm-1.7.3.jar                         
+0.23 s|1.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/9badd56240cb9dc51e786f5f477da920/transformed/core-1.12.0-api.jar                                                    
+0.20 s|1.3 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/55cae2ad0b2b12cdbd7c49b28696a327/transformed/jetified-material-icons-core-release-api.jar                           
+0.18 s|1.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/a4d5665f3391f38edda26795f3843ff0/transformed/jetified-okio-jvm-3.8.0.jar                                            
+0.17 s|1.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/aab5c207a36c0192bef1aecd9728f342/transformed/jetified-okhttp-4.12.0.jar                                             
+0.15 s|1.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/03facb47c476bf346c3d61aae0e2bac7/transformed/jetified-foundation-layout-release-api.jar                             
+0.15 s|1.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/452dd65938d61e7cc5d1ff153cb05a91/transformed/jetified-coil-base-2.6.0-api.jar                                       
+0.14 s|0.9 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/2f2428c790fd489b71e4aa61608ee530/transformed/jetified-ui-graphics-release-api.jar                                   
+0.13 s|0.9 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6413c3b93771f446c369a94573e7109e/transformed/jetified-ui-unit-release-api.jar                                       
+0.11 s|0.8 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5380af2c81633133d3c448b798639764/transformed/jetified-coil-compose-base-2.6.0-api.jar                               
+0.11 s|0.8 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/e5c18567d0ac2f40f1f9a93485244be6/transformed/jetified-animation-core-release-api.jar                                
+0.11 s|0.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/b6e51141d60340daac341273fe7d4c27/transformed/jetified-ui-util-release-api.jar                                       
+0.09 s|0.6 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6f4a79f1a2c4f337268e33e1fda1c017/transformed/jetified-material-ripple-release-api.jar                               
+0.09 s|0.6 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/a1be32ef9acfebcc5478baa5558d51fc/transformed/jetified-coil-compose-2.6.0-api.jar                                    
+0.08 s|0.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/bb7db13cbaa56b05c07f3c36865886e0/transformed/jetified-core-ktx-1.12.0-api.jar                                       
+0.07 s|0.4 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar                                    
+0.07 s|0.4 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/684e1f643e56130c4de8f3bb902e6e28/transformed/jetified-animation-release-api.jar                                     
+0.05 s|0.3 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/dae7391a5fad69b991740951dbc44bc4/transformed/jetified-ui-tooling-release-api.jar                                    
+0.05 s|0.3 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/2b145826618fafa1bf03bf2ae3f9301b/transformed/jetified-annotation-jvm-1.7.1.jar                                      
+0.04 s|0.3 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5aa43705dc30db51fdb653769bc17f95/transformed/jetified-activity-1.8.2-api.jar                                        
+0.02 s|0.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/370ece788a38d2af6253457ce16fe1f5/transformed/lifecycle-viewmodel-2.7.0-api.jar                                      
+0.02 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6f8adecafa00d8225579cd144ad617f2/transformed/jetified-activity-compose-1.8.2-api.jar                                
+0.02 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/f23d70ed384bd2d51bf47f07ddeaa995/transformed/jetified-ui-geometry-release-api.jar                                   
+0.02 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/f02e22901cec05d87894608705f9194b/transformed/jetified-ui-tooling-data-release-api.jar                               
+0.01 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.7.0/85334205d65cca70ed0109c3acbd29e22a2d9cb1/lifecycle-common-2.7.0.jar
+0.01 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/dec998eee65e63ce9331c31fb80dc34b/transformed/lifecycle-runtime-2.7.0-api.jar                                        
+0.01 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/89288a7c2dbd329bf9343ffe2f1ed16c/transformed/jetified-activity-ktx-1.8.2-api.jar                                    
+0.01 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/83b9471a1ac7a7ec7229ee2d1619e4b8/transformed/jetified-runtime-saveable-release-api.jar                              
+0.01 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/2a0ef6bdd3b2cfd4d7c28100ff9f0a86/transformed/jetified-annotation-experimental-1.4.0-api.jar                         
+0.01 s|0.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/d9b6a1915c73304714d0a8b14de28dc6/transformed/jetified-lifecycle-runtime-ktx-2.7.0-api.jar                           
+0.01 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/422b366cfb1ce17499eec2aac654943b/transformed/jetified-ui-tooling-preview-release-api.jar                            
+0.01 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c816ad87519c263ccc145ed6a9477f73/transformed/jetified-annotations-23.0.0.jar                                        
+0.01 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar                                                                                    
+0.01 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/9c17a4f0ea60e67bf7829789357ad35d/transformed/jetified-coil-2.6.0-api.jar                                            
+0.01 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/b6c7de9f9430b40a3b581ae6e93ba96d/transformed/jetified-kotlinx-coroutines-android-1.7.3.jar                          
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/8c9e11f470d65bf7a7bd80964cda9208/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0-api.jar                  
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/0680e2eec2be9cb477a045c2c04a459d/transformed/versionedparcelable-1.1.1-api.jar                                      
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6c90d6b965096313077e975f4d57928b/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0-api.jar                         
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/1176737b537bc2c5cab1822aff0d0f2d/transformed/jetified-kotlin-stdlib-jdk8-1.9.0.jar                                  
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5620a6608dd0cb0007f93af0d0d658a6/transformed/jetified-ui-test-manifest-1.6.4-api.jar                                
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/159acbb128c9bd57f04c40814ce88690/transformed/lifecycle-livedata-core-2.7.0-api.jar                                  
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c5f00cf2778e919ca4bac181acc24780/transformed/jetified-savedstate-1.2.1-api.jar                                      
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.2.0/5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3/core-common-2.2.0.jar          
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/46371a30c3609e5c637efaaf1ba5cd8e/transformed/jetified-kotlin-stdlib-jdk7-1.9.0.jar                                  
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c2579d216af2d74461c7c07396c44e04/transformed/jetified-savedstate-ktx-1.2.1-api.jar                                  
+
+Task ':app:mergeExtDexDebug' finished in 16.31 s
+Time metrics:
+  Total Gradle task time: 16.31 s
+
+Task ':app:processDebugManifestForPackage' finished in 14.64 s
+Time metrics:
+  Total Gradle task time: 14.64 s
+
+Task ':app:compileDebugKotlin' finished in 8.51 s
+Task info:
+  Kotlin language version: 1.9
+Compilation log for task ':app:compileDebugKotlin':
+  Use module detection: true
+  Non-incremental compilation will be performed: UNKNOWN_CHANGES_IN_GRADLE_INPUTS
+  Cleaning 3 output directories
+  [ClasspathSnapshot] Shrunk current classpath snapshot after compilation (shrink mode = NonIncremental), retained 182 / 12955 classes
+Time metrics:
+  Total Gradle task time: 8.51 s
+  Spent time before task action: 4.29 s
+  Task action before worker execution: 0.06 s
+  Run compilation in Gradle worker: 4.11 s
+    Connect to Kotlin daemon: 0.40 s
+    Run compilation: 3.69 s
+      Incremental compilation in daemon: 3.45 s
+        Update caches: 0.06 s
+        Sources compilation round: 3.22 s
+          Compiler initialization time: 0.26 s
+          Compiler code analysis: 1.63 s
+          Compiler code generation: 0.82 s
+        Shrink and save current classpath snapshot after compilation: 0.09 s
+          Shrink current classpath snapshot non-incrementally: 0.09 s
+            Load current classpath snapshot: 0.05 s
+          Save shrunk current classpath snapshot: 0.00 s
+  Start gradle worker: 0.01 s
+Size metrics:
+  Total size of the cache directory: 342.5 KB
+    ABI snapshot size: 49 B
+  Increase memory usage: 209.1 MB
+  Total memory usage at the end of build: 276.8 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 811
+    Number of lines for code generation: 811
+    Analysis lines per second: 498
+    Code generation lines per second: 984
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 54
+    Size of classpath snapshot: 4.5 MB
+    Size of shrunk classpath snapshot: 51.3 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache misses when loading classpath entry snapshots: 54
+  Start time of task action: 2024-03-23T19:54:02
+Build attributes:
+  REBUILD_REASON: Unknown Gradle changes
+GC metrics:
+  PS MarkSweep:
+    GC count: 2
+    GC time: 0.05 s
+  PS Scavenge:
+    GC count: 3
+    GC time: 0.02 s
+
+Task ':app:processDebugResources' finished in 4.53 s
+Time metrics:
+  Total Gradle task time: 4.53 s
+
+Task ':app:validateSigningDebug' finished in 1.04 s
+Time metrics:
+  Total Gradle task time: 1.04 s
+
+Task ':app:mergeDebugJavaResource' finished in 0.91 s
+Time metrics:
+  Total Gradle task time: 0.91 s
+
+Task ':app:checkDebugDuplicateClasses' finished in 0.74 s
+Time metrics:
+  Total Gradle task time: 0.74 s
+
+Task ':app:mergeDebugResources' finished in 0.72 s
+Time metrics:
+  Total Gradle task time: 0.72 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/0caebbeb034477bcb1482040f6d15bca/transformed/jetified-material3-release-api.jar' finished in 0.56 s
+Time metrics:
+  Classpath entry snapshot transform: 0.56 s
+    Snapshot classes: 0.55 s
+      Load contents of classes: 0.10 s
+      Snapshot Kotlin classes: 0.36 s
+      Snapshot Java classes: 0.01 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 8.8 MB
+    Size of jar classpath entry's snapshot: 294.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/9a5ea5a1c9f99968da184da1611a1068/transformed/jetified-foundation-release-api.jar' finished in 0.55 s
+Time metrics:
+  Classpath entry snapshot transform: 0.55 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.53 s
+      Load contents of classes: 0.10 s
+      Snapshot Kotlin classes: 0.36 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 8.1 MB
+    Size of jar classpath entry's snapshot: 476.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Library/Android/sdk/platforms/android-34/android.jar' finished in 0.53 s
+Time metrics:
+  Classpath entry snapshot transform: 0.53 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.51 s
+      Load contents of classes: 0.30 s
+      Snapshot Java classes: 0.16 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 25.1 MB
+    Size of jar classpath entry's snapshot: 1.4 MB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/72e9530fb564e840675483940208c0fe/transformed/jetified-ui-release-api.jar' finished in 0.48 s
+Time metrics:
+  Classpath entry snapshot transform: 0.48 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.47 s
+      Load contents of classes: 0.07 s
+      Snapshot Kotlin classes: 0.34 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 5.4 MB
+    Size of jar classpath entry's snapshot: 342.4 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/30debcd39d5662e5384a16ff7a22adbe/transformed/jetified-kotlin-stdlib-1.9.22.jar' finished in 0.48 s
+Time metrics:
+  Classpath entry snapshot transform: 0.48 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.47 s
+      Load contents of classes: 0.05 s
+      Snapshot Kotlin classes: 0.40 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.6 MB
+    Size of jar classpath entry's snapshot: 249.7 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5e63e0759c371846136f1df5161813e3/transformed/jetified-ui-text-release-api.jar' finished in 0.33 s
+Time metrics:
+  Classpath entry snapshot transform: 0.33 s
+    Snapshot classes: 0.32 s
+      Load contents of classes: 0.02 s
+      Snapshot Kotlin classes: 0.26 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.8 MB
+    Size of jar classpath entry's snapshot: 119.8 KB
+
+Task ':app:packageDebug' finished in 0.32 s
+Time metrics:
+  Total Gradle task time: 0.32 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/46c3509953ac2b8f74a6de56269701d6/transformed/jetified-material-release-api.jar' finished in 0.30 s
+Time metrics:
+  Classpath entry snapshot transform: 0.30 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.30 s
+      Load contents of classes: 0.04 s
+      Snapshot Kotlin classes: 0.21 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 4.6 MB
+    Size of jar classpath entry's snapshot: 158.9 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/04277dbc63794fce255d3708c8955cb5/transformed/jetified-runtime-release-api.jar' finished in 0.30 s
+Time metrics:
+  Classpath entry snapshot transform: 0.30 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.28 s
+      Load contents of classes: 0.05 s
+      Snapshot Kotlin classes: 0.20 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 3.0 MB
+    Size of jar classpath entry's snapshot: 210.5 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/ac6632a6a9c9f9e733c39e97c9e1c475/transformed/jetified-collection-jvm-1.4.0.jar' finished in 0.26 s
+Time metrics:
+  Classpath entry snapshot transform: 0.26 s
+    Snapshot classes: 0.26 s
+      Load contents of classes: 0.03 s
+      Snapshot Kotlin classes: 0.22 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 749.4 KB
+    Size of jar classpath entry's snapshot: 35.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/35cc7f89061cda1291facfc3e70f4165/transformed/jetified-kotlinx-coroutines-core-jvm-1.7.3.jar' finished in 0.26 s
+Time metrics:
+  Classpath entry snapshot transform: 0.26 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.25 s
+      Load contents of classes: 0.06 s
+      Snapshot Kotlin classes: 0.16 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.5 MB
+    Size of jar classpath entry's snapshot: 193.3 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/9badd56240cb9dc51e786f5f477da920/transformed/core-1.12.0-api.jar' finished in 0.23 s
+Time metrics:
+  Classpath entry snapshot transform: 0.23 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.21 s
+      Load contents of classes: 0.06 s
+      Snapshot Java classes: 0.12 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 2.7 MB
+    Size of jar classpath entry's snapshot: 267.7 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/55cae2ad0b2b12cdbd7c49b28696a327/transformed/jetified-material-icons-core-release-api.jar' finished in 0.20 s
+Time metrics:
+  Classpath entry snapshot transform: 0.20 s
+    Snapshot classes: 0.19 s
+      Load contents of classes: 0.02 s
+      Snapshot Kotlin classes: 0.14 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.9 MB
+    Size of jar classpath entry's snapshot: 76.2 KB
+
+Task ':app:dexBuilderDebug' finished in 0.19 s
+Time metrics:
+  Total Gradle task time: 0.19 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/a4d5665f3391f38edda26795f3843ff0/transformed/jetified-okio-jvm-3.8.0.jar' finished in 0.18 s
+Time metrics:
+  Classpath entry snapshot transform: 0.18 s
+    Snapshot classes: 0.18 s
+      Load contents of classes: 0.03 s
+      Snapshot Kotlin classes: 0.14 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 356.6 KB
+    Size of jar classpath entry's snapshot: 24.9 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/aab5c207a36c0192bef1aecd9728f342/transformed/jetified-okhttp-4.12.0.jar' finished in 0.17 s
+Time metrics:
+  Classpath entry snapshot transform: 0.17 s
+    Snapshot classes: 0.16 s
+      Load contents of classes: 0.03 s
+      Snapshot Kotlin classes: 0.12 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 771.0 KB
+    Size of jar classpath entry's snapshot: 76.7 KB
+
+Task ':app:processDebugMainManifest' finished in 0.16 s
+Time metrics:
+  Total Gradle task time: 0.16 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/03facb47c476bf346c3d61aae0e2bac7/transformed/jetified-foundation-layout-release-api.jar' finished in 0.15 s
+Time metrics:
+  Classpath entry snapshot transform: 0.15 s
+    Snapshot classes: 0.15 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.12 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.3 MB
+    Size of jar classpath entry's snapshot: 88.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/452dd65938d61e7cc5d1ff153cb05a91/transformed/jetified-coil-base-2.6.0-api.jar' finished in 0.15 s
+Time metrics:
+  Classpath entry snapshot transform: 0.14 s
+    Snapshot classes: 0.14 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.11 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 949.3 KB
+    Size of jar classpath entry's snapshot: 51.2 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/2f2428c790fd489b71e4aa61608ee530/transformed/jetified-ui-graphics-release-api.jar' finished in 0.14 s
+Time metrics:
+  Classpath entry snapshot transform: 0.14 s
+    Snapshot classes: 0.14 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.11 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 897.5 KB
+    Size of jar classpath entry's snapshot: 60.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6413c3b93771f446c369a94573e7109e/transformed/jetified-ui-unit-release-api.jar' finished in 0.13 s
+Time metrics:
+  Classpath entry snapshot transform: 0.13 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.12 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.09 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 178.3 KB
+    Size of jar classpath entry's snapshot: 13.2 KB
+
+Task ':app:parseDebugLocalResources' finished in 0.12 s
+Time metrics:
+  Total Gradle task time: 0.12 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5380af2c81633133d3c448b798639764/transformed/jetified-coil-compose-base-2.6.0-api.jar' finished in 0.11 s
+Time metrics:
+  Classpath entry snapshot transform: 0.11 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.11 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.08 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 290.0 KB
+    Size of jar classpath entry's snapshot: 10.4 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/e5c18567d0ac2f40f1f9a93485244be6/transformed/jetified-animation-core-release-api.jar' finished in 0.11 s
+Time metrics:
+  Classpath entry snapshot transform: 0.11 s
+    Snapshot classes: 0.11 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.09 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 819.7 KB
+    Size of jar classpath entry's snapshot: 50.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/b6e51141d60340daac341273fe7d4c27/transformed/jetified-ui-util-release-api.jar' finished in 0.11 s
+Time metrics:
+  Classpath entry snapshot transform: 0.11 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.10 s
+      Snapshot Kotlin classes: 0.08 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 30.1 KB
+    Size of jar classpath entry's snapshot: 2.5 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6f4a79f1a2c4f337268e33e1fda1c017/transformed/jetified-material-ripple-release-api.jar' finished in 0.09 s
+Time metrics:
+  Classpath entry snapshot transform: 0.09 s
+    Snapshot classes: 0.09 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.06 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 170.5 KB
+    Size of jar classpath entry's snapshot: 9.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/a1be32ef9acfebcc5478baa5558d51fc/transformed/jetified-coil-compose-2.6.0-api.jar' finished in 0.09 s
+Time metrics:
+  Classpath entry snapshot transform: 0.09 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.08 s
+      Snapshot Kotlin classes: 0.06 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 56.4 KB
+    Size of jar classpath entry's snapshot: 1.7 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/bb7db13cbaa56b05c07f3c36865886e0/transformed/jetified-core-ktx-1.12.0-api.jar' finished in 0.08 s
+Time metrics:
+  Classpath entry snapshot transform: 0.08 s
+    Snapshot classes: 0.08 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.06 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 421.7 KB
+    Size of jar classpath entry's snapshot: 27.3 KB
+
+Task ':app:checkDebugAarMetadata' finished in 0.07 s
+Time metrics:
+  Total Gradle task time: 0.07 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar' finished in 0.07 s
+Time metrics:
+  Classpath entry snapshot transform: 0.07 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.05 s
+      Load contents of classes: 0.00 s
+      Snapshot Java classes: 0.03 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 86.7 KB
+    Size of jar classpath entry's snapshot: 86.3 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/684e1f643e56130c4de8f3bb902e6e28/transformed/jetified-animation-release-api.jar' finished in 0.07 s
+Time metrics:
+  Classpath entry snapshot transform: 0.07 s
+    Snapshot classes: 0.07 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.04 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 708.1 KB
+    Size of jar classpath entry's snapshot: 35.9 KB
+
+Task ':app:mapDebugSourceSetPaths' finished in 0.06 s
+Time metrics:
+  Total Gradle task time: 0.06 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/dae7391a5fad69b991740951dbc44bc4/transformed/jetified-ui-tooling-release-api.jar' finished in 0.05 s
+Time metrics:
+  Classpath entry snapshot transform: 0.05 s
+    Snapshot classes: 0.05 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.03 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 570.5 KB
+    Size of jar classpath entry's snapshot: 33.0 KB
+
+Task ':app:createDebugVariantModel' finished in 0.05 s
+Time metrics:
+  Total Gradle task time: 0.05 s
+
+Task ':app:packageDebugResources' finished in 0.05 s
+Time metrics:
+  Total Gradle task time: 0.05 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/2b145826618fafa1bf03bf2ae3f9301b/transformed/jetified-annotation-jvm-1.7.1.jar' finished in 0.05 s
+Time metrics:
+  Classpath entry snapshot transform: 0.05 s
+    Snapshot classes: 0.04 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.03 s
+    Save classpath entry snapshot: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 53.9 KB
+    Size of jar classpath entry's snapshot: 19.2 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5aa43705dc30db51fdb653769bc17f95/transformed/jetified-activity-1.8.2-api.jar' finished in 0.04 s
+Time metrics:
+  Classpath entry snapshot transform: 0.04 s
+    Snapshot classes: 0.04 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.03 s
+      Snapshot Java classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 366.4 KB
+    Size of jar classpath entry's snapshot: 36.2 KB
+
+Task ':app:mergeDebugNativeLibs' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.04 s
+
+Task ':app:mergeLibDexDebug' finished in 0.03 s
+Time metrics:
+  Total Gradle task time: 0.03 s
+
+Task ':app:mergeProjectDexDebug' finished in 0.03 s
+Time metrics:
+  Total Gradle task time: 0.03 s
+
+Task ':app:processDebugManifest' finished in 0.03 s
+Time metrics:
+  Total Gradle task time: 0.03 s
+
+Task ':app:processDebugJavaRes' finished in 0.02 s
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/370ece788a38d2af6253457ce16fe1f5/transformed/lifecycle-viewmodel-2.7.0-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.02 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.02 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 82.6 KB
+    Size of jar classpath entry's snapshot: 9.4 KB
+
+Task ':app:mergeDebugAssets' finished in 0.02 s
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6f8adecafa00d8225579cd144ad617f2/transformed/jetified-activity-compose-1.8.2-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.02 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 150.8 KB
+    Size of jar classpath entry's snapshot: 8.7 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/f23d70ed384bd2d51bf47f07ddeaa995/transformed/jetified-ui-geometry-release-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.02 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 76.1 KB
+    Size of jar classpath entry's snapshot: 4.9 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/f02e22901cec05d87894608705f9194b/transformed/jetified-ui-tooling-data-release-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.02 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 82.3 KB
+    Size of jar classpath entry's snapshot: 4.8 KB
+
+Task ':app:mergeDebugShaders' finished in 0.02 s
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.7.0/85334205d65cca70ed0109c3acbd29e22a2d9cb1/lifecycle-common-2.7.0.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 55.3 KB
+    Size of jar classpath entry's snapshot: 8.6 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/dec998eee65e63ce9331c31fb80dc34b/transformed/lifecycle-runtime-2.7.0-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 41.9 KB
+    Size of jar classpath entry's snapshot: 3.7 KB
+
+Task ':app:writeDebugSigningConfigVersions' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/89288a7c2dbd329bf9343ffe2f1ed16c/transformed/jetified-activity-ktx-1.8.2-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 56.3 KB
+    Size of jar classpath entry's snapshot: 3.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/83b9471a1ac7a7ec7229ee2d1619e4b8/transformed/jetified-runtime-saveable-release-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 117.5 KB
+    Size of jar classpath entry's snapshot: 8.2 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/2a0ef6bdd3b2cfd4d7c28100ff9f0a86/transformed/jetified-annotation-experimental-1.4.0-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 9.9 KB
+    Size of jar classpath entry's snapshot: 1.9 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/d9b6a1915c73304714d0a8b14de28dc6/transformed/jetified-lifecycle-runtime-ktx-2.7.0-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 77.8 KB
+    Size of jar classpath entry's snapshot: 3.4 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/422b366cfb1ce17499eec2aac654943b/transformed/jetified-ui-tooling-preview-release-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 33.4 KB
+    Size of jar classpath entry's snapshot: 5.7 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c816ad87519c263ccc145ed6a9477f73/transformed/jetified-annotations-23.0.0.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Java classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 28.7 KB
+    Size of jar classpath entry's snapshot: 17.6 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.01 s
+      Snapshot Java classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 14.8 KB
+    Size of jar classpath entry's snapshot: 6.5 KB
+
+Task ':app:extractDeepLinksDebug' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:javaPreCompileDebug' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:compileDebugShaders' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/9c17a4f0ea60e67bf7829789357ad35d/transformed/jetified-coil-2.6.0-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.01 s
+    Snapshot classes: 0.00 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 15.3 KB
+    Size of jar classpath entry's snapshot: 855 B
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/b6c7de9f9430b40a3b581ae6e93ba96d/transformed/jetified-kotlinx-coroutines-android-1.7.3.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+    Snapshot classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 20.2 KB
+    Size of jar classpath entry's snapshot: 2.4 KB
+
+Task ':app:compressDebugAssets' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/8c9e11f470d65bf7a7bd80964cda9208/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0-api.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+    Snapshot classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 82.8 KB
+    Size of jar classpath entry's snapshot: 6.0 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/0680e2eec2be9cb477a045c2c04a459d/transformed/versionedparcelable-1.1.1-api.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+    Snapshot classes: 0.00 s
+      Snapshot Java classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 69.3 KB
+    Size of jar classpath entry's snapshot: 4.1 KB
+
+Task ':app:generateDebugResValues' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugCompatibleScreenManifests' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugApkListingFileRedirect' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:desugarDebugFileDependencies' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:stripDebugDebugSymbols' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:writeDebugAppMetadata' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6c90d6b965096313077e975f4d57928b/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0-api.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+    Snapshot classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 4.3 KB
+    Size of jar classpath entry's snapshot: 758 B
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/1176737b537bc2c5cab1822aff0d0f2d/transformed/jetified-kotlin-stdlib-jdk8-1.9.0.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 963 B
+    Size of jar classpath entry's snapshot: 4 B
+
+Task ':app:compileDebugJavaWithJavac' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugNativeDebugMetadata' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:generateDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugJniLibFolders' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/5620a6608dd0cb0007f93af0d0d658a6/transformed/jetified-ui-test-manifest-1.6.4-api.jar' finished in 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 518 B
+    Size of jar classpath entry's snapshot: 218 B
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/159acbb128c9bd57f04c40814ce88690/transformed/lifecycle-livedata-core-2.7.0-api.jar' finished in 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 18.3 KB
+    Size of jar classpath entry's snapshot: 1.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c5f00cf2778e919ca4bac181acc24780/transformed/jetified-savedstate-1.2.1-api.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 37.2 KB
+    Size of jar classpath entry's snapshot: 4.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.2.0/5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3/core-common-2.2.0.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 11.4 KB
+    Size of jar classpath entry's snapshot: 3.0 KB
+
+Task ':app:preBuild' finished in 0.00 s
+
+Task ':app:preDebugBuild' finished in 0.00 s
+
+Task ':app:generateDebugAssets' finished in 0.00 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/46371a30c3609e5c637efaaf1ba5cd8e/transformed/jetified-kotlin-stdlib-jdk7-1.9.0.jar' finished in 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 958 B
+    Size of jar classpath entry's snapshot: 4 B
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c2579d216af2d74461c7c07396c44e04/transformed/jetified-savedstate-ktx-1.2.1-api.jar' finished in 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 2.0 KB
+    Size of jar classpath entry's snapshot: 395 B
+
+Task ':app:assembleDebug' finished in 0.00 s
+

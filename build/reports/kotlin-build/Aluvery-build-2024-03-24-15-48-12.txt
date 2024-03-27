@@ -1,0 +1,367 @@
+Gradle start parameters:
+  tasks = [:app:assembleDebug]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.enableStableIds: true, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.build.api: 34, android.injected.build.abi: arm64-v8a, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Time metrics:
+  Total Gradle task time: 2.14 s
+  Spent time before task action: 0.02 s
+  Task action before worker execution: 0.05 s
+    Backup output: 0.04 s
+  Run compilation in Gradle worker: 1.52 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 1.51 s
+      Incremental compilation in daemon: 1.48 s
+        Calculate initial dirty sources set: 0.01 s
+          Detect removed classes: 0.01 s
+        Update caches: 0.02 s
+        Sources compilation round: 1.35 s
+          Compiler initialization time: 0.06 s
+          Compiler code analysis: 0.64 s
+          Compiler code generation: 0.35 s
+        Shrink and save current classpath snapshot after compilation: 0.01 s
+          Shrink current classpath snapshot incrementally: 0.01 s
+            Load current classpath snapshot: 0.00 s
+  Start gradle worker: 0.00 s
+
+Size metrics:
+  Total size of the cache directory: 863.5 KB
+    ABI snapshot size: 856 B
+  Increase memory usage: 252.0 MB
+  Total memory usage at the end of build: 361.0 MB
+  Total compiler iteration: 2
+    Number of lines analyzed: 626
+    Number of lines for code generation: 626
+    Analysis lines per second: 1828
+    Code generation lines per second: 3531
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 57.4 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache hits when loading classpath entry snapshots: 53
+  Start time of task action: 2024-03-24T18:48:10
+
+
+Total time for Kotlin tasks: 1.63 s (76.4 % of all tasks time)
+Time  |% of Kotlin time|Task                   
+1.63 s|100.0 %         |:app:compileDebugKotlin
+
+Task ':app:compileDebugKotlin' finished in 1.63 s
+Task info:
+  Kotlin language version: 1.9
+Compilation log for task ':app:compileDebugKotlin':
+  Use module detection: true
+  Classpath changes info passed from Gradle task: NoChanges
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.1.4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-10.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-5.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.1.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreenPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.1.2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-7.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.1.3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-6.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-2.1)
+  Process SignatureChanged(fqName = .kotlin_module)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-9.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.1.5)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt.lambda-8.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ComposableSingletons.ProductsFormActivityKt)
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-6$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-10$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-7$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-5$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreen$1$2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreenPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreen$1$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreen$1$3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-8$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreen$1$4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreen$1$5.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$ProductsFormActivityKt$lambda-9$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivityKt$ProductsFormScreen$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/models/Product.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/models/Product.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/models/Product.kt
+  Compile iteration:
+    app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/ProductsFormActivity.kt <- was modified since last time
+    app/src/main/java/com/stephanieverissimo/aluvery/models/Product.kt <- was modified since last time
+  Process MembersChanged(fqName = com.stephanieverissimo.aluvery.models.Product, names = [component1, component2, component3, component4, hashCode, equals, toString, copy])
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.models.Product)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.ui.activities.ProductsFormActivityKt.ProductsFormScreen.1.5)
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductItemKt$ProductItem$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$ProductItemKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$ProductItemKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductItemKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$ProductItemKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductItemKt$ProductItemPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductItemKt$ProductItem$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$ProductSectionKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSection$1$1$invoke$$inlined$items$default$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$ProductSectionKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSection$1$1$invoke$$inlined$items$default$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$ProductSectionKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSection$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSection$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSection$1$1$invoke$$inlined$items$default$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSectionPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ProductSectionKt$ProductSection$1$1$invoke$$inlined$items$default$4.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$4.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreenPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreenWithSearchTextPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1$invoke$$inlined$items$default$5.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductsScreenKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1$invoke$$inlined$items$default$4.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreenPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductsScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1$invoke$$inlined$items$default$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductsScreenKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1$invoke$$inlined$items$default$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductsScreenKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductsScreenKt$ProductsScreen$1$invoke$$inlined$items$default$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt$App$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/MainActivity.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/ui/activities/ComposableSingletons$MainActivityKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItemWithDescriptionPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItemPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/sampleData/SampleData.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/sampleData/SampleDataKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/sampleData/SampleData.kt
+  Compile iteration:
+    app/src/main/java/com/stephanieverissimo/aluvery/components/ProductItem.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+    app/src/main/java/com/stephanieverissimo/aluvery/components/ProductSection.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+    app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+    app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductsScreen.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+    app/src/main/java/com/stephanieverissimo/aluvery/ui/activities/MainActivity.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+    app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+    app/src/main/java/com/stephanieverissimo/aluvery/sampleData/SampleData.kt <- dirty member com.stephanieverissimo.aluvery.models#Product
+  [ClasspathSnapshot] Shrunk current classpath snapshot after compilation (shrink mode = ChangedLookupsUnchangedClasspath), retained 212 / 12757 classes
+  Incremental compilation completed
+Time metrics:
+  Total Gradle task time: 1.63 s
+  Spent time before task action: 0.02 s
+  Task action before worker execution: 0.05 s
+    Backup output: 0.04 s
+  Run compilation in Gradle worker: 1.52 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 1.51 s
+      Incremental compilation in daemon: 1.48 s
+        Calculate initial dirty sources set: 0.01 s
+          Detect removed classes: 0.01 s
+        Update caches: 0.02 s
+        Sources compilation round: 1.35 s
+          Compiler initialization time: 0.06 s
+          Compiler code analysis: 0.64 s
+          Compiler code generation: 0.35 s
+        Shrink and save current classpath snapshot after compilation: 0.01 s
+          Shrink current classpath snapshot incrementally: 0.01 s
+            Load current classpath snapshot: 0.00 s
+  Start gradle worker: 0.00 s
+Size metrics:
+  Total size of the cache directory: 863.5 KB
+    ABI snapshot size: 856 B
+  Increase memory usage: 252.0 MB
+  Total memory usage at the end of build: 361.0 MB
+  Total compiler iteration: 2
+    Number of lines analyzed: 626
+    Number of lines for code generation: 626
+    Analysis lines per second: 1828
+    Code generation lines per second: 3531
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 57.4 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache hits when loading classpath entry snapshots: 53
+  Start time of task action: 2024-03-24T18:48:10
+GC metrics:
+  PS MarkSweep:
+    GC count: 0
+    GC time: 0.00 s
+  PS Scavenge:
+    GC count: 1
+    GC time: 0.03 s
+
+Task ':app:dexBuilderDebug' finished in 0.29 s
+Time metrics:
+  Total Gradle task time: 0.29 s
+
+Task ':app:packageDebug' finished in 0.07 s
+Time metrics:
+  Total Gradle task time: 0.07 s
+
+Task ':app:mergeProjectDexDebug' finished in 0.05 s
+Time metrics:
+  Total Gradle task time: 0.05 s
+
+Task ':app:checkDebugAarMetadata' finished in 0.04 s
+Time metrics:
+  Total Gradle task time: 0.04 s
+
+Task ':app:processDebugResources' finished in 0.02 s
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task ':app:processDebugMainManifest' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:mergeExtDexDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mapDebugSourceSetPaths' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:checkDebugDuplicateClasses' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugJavaResource' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:javaPreCompileDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugAssets' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugNativeLibs' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:parseDebugLocalResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugCompatibleScreenManifests' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:processDebugManifestForPackage' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:compileDebugShaders' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:compressDebugAssets' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeLibDexDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:validateSigningDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:processDebugJavaRes' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugApkListingFileRedirect' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugVariantModel' finished in 0.00 s
+
+Task ':app:preBuild' finished in 0.00 s
+
+Task ':app:preDebugBuild' finished in 0.00 s
+
+Task ':app:mergeDebugNativeDebugMetadata' was skipped: NO-SOURCE
+
+Task ':app:generateDebugResValues' finished in 0.00 s
+
+Task ':app:generateDebugResources' finished in 0.00 s
+
+Task ':app:packageDebugResources' finished in 0.00 s
+
+Task ':app:extractDeepLinksDebug' finished in 0.00 s
+
+Task ':app:processDebugManifest' finished in 0.00 s
+
+Task ':app:mergeDebugShaders' finished in 0.00 s
+
+Task ':app:generateDebugAssets' finished in 0.00 s
+
+Task ':app:desugarDebugFileDependencies' finished in 0.00 s
+
+Task ':app:mergeDebugJniLibFolders' finished in 0.00 s
+
+Task ':app:stripDebugDebugSymbols' was skipped: NO-SOURCE
+
+Task ':app:writeDebugAppMetadata' finished in 0.00 s
+
+Task ':app:writeDebugSigningConfigVersions' finished in 0.00 s
+
+Task ':app:compileDebugJavaWithJavac' was skipped: NO-SOURCE
+
+Task ':app:assembleDebug' finished in 0.00 s
+

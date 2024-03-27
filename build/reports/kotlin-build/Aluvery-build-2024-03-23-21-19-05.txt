@@ -1,0 +1,672 @@
+Gradle start parameters:
+  tasks = [:app:assembleDebug]
+  excluded tasks = []
+  current dir = /Users/stephanie.pinheiro/Documents/Estudos/Aluvery
+  project properties args = [android.studio.version: 232.10227.8.2321.11479570, android.injected.enableStableIds: true, android.injected.attribution.file.location: /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/.gradle, android.injected.build.api: 34, android.injected.build.abi: arm64-v8a, android.injected.invoked.from.ide: true]
+  system properties args = [idea.active: true, idea.version: 2023.2]
+
+Time metrics:
+  Total Gradle task time: 9.17 s
+  Spent time before task action: 0.59 s
+  Task action before worker execution: 0.04 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.89 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.88 s
+      Incremental compilation in daemon: 0.81 s
+        Calculate initial dirty sources set: 0.07 s
+          Compute classpath changes: 0.05 s
+            Load current classpath snapshot: 0.01 s
+              Remove duplicate classes: 0.00 s
+            Shrink current classpath snapshot: 0.03 s
+              Get lookup symbols: 0.00 s
+              Find referenced classes: 0.01 s
+              Find transitively referenced classes: 0.02 s
+            Load shrunk previous classpath snapshot: 0.00 s
+            Compute changed and impacted set: 0.01 s
+              Compute class changes: 0.00 s
+                Compute Kotlin class changes: 0.00 s
+          Detect removed classes: 0.01 s
+        Update caches: 0.01 s
+        Sources compilation round: 0.67 s
+          Compiler initialization time: 0.05 s
+          Compiler code analysis: 0.31 s
+          Compiler code generation: 0.12 s
+        Shrink and save current classpath snapshot after compilation: 0.00 s
+          Save shrunk current classpath snapshot: 0.00 s
+  Start gradle worker: 0.00 s
+  Classpath entry snapshot transform: 1.06 s
+    Load classes (paths only): 0.01 s
+    Snapshot classes: 1.01 s
+      Load contents of classes: 0.18 s
+      Snapshot Kotlin classes: 0.65 s
+      Snapshot Java classes: 0.02 s
+    Save classpath entry snapshot: 0.02 s
+
+Size metrics:
+  Total size of the cache directory: 634.1 KB
+    ABI snapshot size: 6.1 KB
+  Increase memory usage: 237.0 MB
+  Total memory usage at the end of build: 268.4 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 180
+    Number of lines for code generation: 180
+    Analysis lines per second: 582
+    Code generation lines per second: 1538
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 19
+    Size of jar classpath entry: 25.2 MB
+    Size of jar classpath entry's snapshot: 1.6 MB
+  Number of times classpath changes are computed: 1
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 55.5 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache hits when loading classpath entry snapshots: 34
+    Number of cache misses when loading classpath entry snapshots: 19
+  Start time of task action: 2024-03-24T00:18:59
+
+
+Total time for Kotlin tasks: 2.62 s (25.6 % of all tasks time)
+Time  |% of Kotlin time|Task                                                                                                                                                                               
+1.55 s|59.2 %          |:app:compileDebugKotlin                                                                                                                                                            
+0.17 s|6.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/3edb620587211dddec0bf7a9a0be91b0/transformed/jetified-foundation-release-api.jar         
+0.14 s|5.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/19e275af6ddc986c0095f67607c15644/transformed/jetified-ui-release-api.jar                 
+0.13 s|4.8 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/a2943d0ded467f56195cb2010d079f39/transformed/jetified-ui-text-release-api.jar            
+0.12 s|4.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/86380a27010b620f1659ec80658466eb/transformed/jetified-runtime-release-api.jar            
+0.10 s|3.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/386c5b16e0055dcc22c12a0b6efe0524/transformed/jetified-foundation-layout-release-api.jar  
+0.09 s|3.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/289f6e683f1cfe1265c17ac9407cb831/transformed/jetified-material-icons-core-release-api.jar
+0.07 s|2.6 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/d106ff34c9421f8a7c0f4d0b1937a6c5/transformed/jetified-animation-core-release-api.jar     
+0.06 s|2.3 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/efd4f930e06d4f7634242361d5315443/transformed/jetified-ui-graphics-release-api.jar        
+0.04 s|1.5 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/af60902982149d355853929d72ff5c69/transformed/jetified-ui-tooling-release-api.jar         
+0.04 s|1.3 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/0d2803e9243183b13042699337552494/transformed/jetified-animation-release-api.jar          
+0.03 s|1.1 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar         
+0.03 s|1.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/ab62f4466240ceea569b7fd823996702/transformed/jetified-ui-unit-release-api.jar            
+0.02 s|0.7 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c10949cbe04db0a1b610903160c6880a/transformed/jetified-material-ripple-release-api.jar    
+0.02 s|0.6 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6b38295ae58b9dc4a04186428b154a41/transformed/jetified-ui-tooling-preview-release-api.jar 
+0.02 s|0.6 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/278cb74685c9b9898f6dee72e88332e6/transformed/jetified-ui-util-release-api.jar            
+0.02 s|0.6 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/46d3908e837cd7029dee712575ee6b62/transformed/jetified-runtime-saveable-release-api.jar   
+0.01 s|0.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/80b7be330a92c8787ed7e49a1d097c99/transformed/jetified-ui-tooling-data-release-api.jar    
+0.00 s|0.2 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/d62cd443d596c2018e79d0cc173078f7/transformed/jetified-ui-geometry-release-api.jar        
+0.00 s|0.0 %           |ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/033704d087a5fe32e8dcf69b74653b7b/transformed/jetified-ui-test-manifest-1.6.3-api.jar     
+
+Task ':app:mergeExtDexDebug' finished in 5.72 s
+Time metrics:
+  Total Gradle task time: 5.72 s
+
+Task ':app:compileDebugKotlin' finished in 1.55 s
+Task info:
+  Kotlin language version: 1.9
+Compilation log for task ':app:compileDebugKotlin':
+  Use module detection: true
+  Classpath changes info passed from Gradle task: ToBeComputedByIncrementalCompiler
+  [ClasspathSnapshot] Shrunk current classpath snapshot for diffing, retained 199 / 12757 classes
+  [ClasspathSnapshot] Loaded shrunk previous classpath snapshot for diffing, found 199 classes
+  [ClasspathSnapshot] Changed set = ProgramSymbolSet(classes = [], classMembers = {}, packageMembers = {})
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItemPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreenFilledPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.text.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.ComposableSingletons.CardProductItemKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.ComposableSingletons.CardProductItemKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItemWithDescriptionPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.6.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-5.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt)
+  Process SignatureChanged(fqName = .kotlin_module)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.name.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-6.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-8.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.url.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.ComposableSingletons.CardProductItemKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.2.invoke..inlined.items.default.4)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.2.invoke..inlined.items.default.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.2.invoke..inlined.items.default.3)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.ComposableSingletons.CardProductItemKt.lambda-4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1.1.1.2.invoke..inlined.items.default.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItem.1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreenPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItem.descriptionExpanded.2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.ComposableSingletons.CardProductItemKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.price.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.7)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.9)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.5)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.HomeScreenKt.lambda-4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.4)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.5)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItem.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.3)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItem.3)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreenPrev.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-5.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.description.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-7.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-9.1)
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$4.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreenPrev$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt$lambda-5$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$HomeScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$text$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/HomeScreenKt$HomeScreen$1$1$1$2$invoke$$inlined$items$default$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormUiState$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormUiState$5.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-5$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormUiState$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$description$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$6$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreenPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$price$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreenFilledPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormUiState.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormUiState$4.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$url$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$5.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormUiState$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-9$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$name$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-7$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-8$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ComposableSingletons$ProductFormScreenKt$lambda-6$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$7.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/screens/ProductFormScreenKt$ProductFormScreen$9.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$descriptionExpanded$2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$3.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$2.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-2$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItem$1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItemWithDescriptionPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-1$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-4$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/CardProductItemKt$CardProductItemPreview$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt$lambda-3$1.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Deleting /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/tmp/kotlin-classes/debug/com/stephanieverissimo/aluvery/components/ComposableSingletons$CardProductItemKt.class on clearing cache for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt
+  Compile iteration:
+    app/src/main/java/com/stephanieverissimo/aluvery/screens/HomeScreen.kt <- was modified since last time
+    app/src/main/java/com/stephanieverissimo/aluvery/screens/ProductFormScreen.kt <- dirty class com.stephanieverissimo.aluvery.screens.ProductFormUiState
+    app/src/main/java/com/stephanieverissimo/aluvery/components/CardProductItem.kt <- was modified since last time
+  Process Removed(fqName = com.stephanieverissimo.aluvery.screens, names = [ProductFormScreen, ProductFormScreenPreview, ProductFormScreenFilledPreview])
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.url.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreenFilledPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.HomeScreenKt.HomeScreen.text.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreenPreview.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.components.CardProductItemKt.CardProductItem.descriptionExpanded.2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.price.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.7)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.9)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.6.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.5)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.4)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.5)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.3)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-1.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-2.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-3.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.name.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormScreenKt.ProductFormScreen.description.2)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-5.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-4.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-7.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-6.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-9.1)
+  Process SignatureChanged(fqName = com.stephanieverissimo.aluvery.screens.ComposableSingletons.ProductFormScreenKt.lambda-8.1)
+  Process ParentsChanged(fqName = com.stephanieverissimo.aluvery.screens.ProductFormUiState)
+  [ClasspathSnapshot] Shrunk current classpath snapshot after compilation (shrink mode = UnchangedLookupsChangedClasspath), retained 199 / 12757 classes
+  Incremental compilation completed
+Time metrics:
+  Total Gradle task time: 1.55 s
+  Spent time before task action: 0.59 s
+  Task action before worker execution: 0.04 s
+    Backup output: 0.03 s
+  Run compilation in Gradle worker: 0.89 s
+    Connect to Kotlin daemon: 0.01 s
+    Calculate output size: 0.00 s
+    Run compilation: 0.88 s
+      Incremental compilation in daemon: 0.81 s
+        Calculate initial dirty sources set: 0.07 s
+          Compute classpath changes: 0.05 s
+            Load current classpath snapshot: 0.01 s
+              Remove duplicate classes: 0.00 s
+            Shrink current classpath snapshot: 0.03 s
+              Get lookup symbols: 0.00 s
+              Find referenced classes: 0.01 s
+              Find transitively referenced classes: 0.02 s
+            Load shrunk previous classpath snapshot: 0.00 s
+            Compute changed and impacted set: 0.01 s
+              Compute class changes: 0.00 s
+                Compute Kotlin class changes: 0.00 s
+          Detect removed classes: 0.01 s
+        Update caches: 0.01 s
+        Sources compilation round: 0.67 s
+          Compiler initialization time: 0.05 s
+          Compiler code analysis: 0.31 s
+          Compiler code generation: 0.12 s
+        Shrink and save current classpath snapshot after compilation: 0.00 s
+          Save shrunk current classpath snapshot: 0.00 s
+  Start gradle worker: 0.00 s
+Size metrics:
+  Total size of the cache directory: 634.1 KB
+    ABI snapshot size: 6.1 KB
+  Increase memory usage: 237.0 MB
+  Total memory usage at the end of build: 268.4 MB
+  Total compiler iteration: 1
+    Number of lines analyzed: 180
+    Number of lines for code generation: 180
+    Analysis lines per second: 582
+    Code generation lines per second: 1538
+  Number of times classpath changes are computed: 1
+  Number of times classpath snapshot is shrunk and saved after compilation: 1
+    Number of classpath entries: 53
+    Size of classpath snapshot: 4.3 MB
+    Size of shrunk classpath snapshot: 55.5 KB
+  Number of times classpath snapshot is loaded: 1
+    Number of cache hits when loading classpath entry snapshots: 34
+    Number of cache misses when loading classpath entry snapshots: 19
+  Start time of task action: 2024-03-24T00:18:59
+GC metrics:
+  PS MarkSweep:
+    GC count: 0
+    GC time: 0.00 s
+  PS Scavenge:
+    GC count: 0
+    GC time: 0.00 s
+
+Task ':app:mergeDebugJavaResource' finished in 0.51 s
+Time metrics:
+  Total Gradle task time: 0.51 s
+
+Task ':app:checkDebugDuplicateClasses' finished in 0.42 s
+Time metrics:
+  Total Gradle task time: 0.42 s
+
+Task ':app:processDebugResources' finished in 0.41 s
+Time metrics:
+  Total Gradle task time: 0.41 s
+
+Task ':app:packageDebug' finished in 0.23 s
+Time metrics:
+  Total Gradle task time: 0.23 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/3edb620587211dddec0bf7a9a0be91b0/transformed/jetified-foundation-release-api.jar' finished in 0.17 s
+Time metrics:
+  Classpath entry snapshot transform: 0.17 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.16 s
+      Load contents of classes: 0.04 s
+      Snapshot Kotlin classes: 0.09 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 8.1 MB
+    Size of jar classpath entry's snapshot: 476.6 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/19e275af6ddc986c0095f67607c15644/transformed/jetified-ui-release-api.jar' finished in 0.14 s
+Time metrics:
+  Classpath entry snapshot transform: 0.14 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.13 s
+      Load contents of classes: 0.02 s
+      Snapshot Kotlin classes: 0.09 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 5.4 MB
+    Size of jar classpath entry's snapshot: 342.4 KB
+
+Task ':app:dexBuilderDebug' finished in 0.14 s
+Time metrics:
+  Total Gradle task time: 0.14 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/a2943d0ded467f56195cb2010d079f39/transformed/jetified-ui-text-release-api.jar' finished in 0.13 s
+Time metrics:
+  Classpath entry snapshot transform: 0.12 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.12 s
+      Load contents of classes: 0.02 s
+      Snapshot Kotlin classes: 0.08 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.8 MB
+    Size of jar classpath entry's snapshot: 119.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/86380a27010b620f1659ec80658466eb/transformed/jetified-runtime-release-api.jar' finished in 0.12 s
+Time metrics:
+  Classpath entry snapshot transform: 0.12 s
+    Snapshot classes: 0.11 s
+      Load contents of classes: 0.02 s
+      Snapshot Kotlin classes: 0.08 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 3.0 MB
+    Size of jar classpath entry's snapshot: 210.5 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/386c5b16e0055dcc22c12a0b6efe0524/transformed/jetified-foundation-layout-release-api.jar' finished in 0.10 s
+Time metrics:
+  Classpath entry snapshot transform: 0.10 s
+    Snapshot classes: 0.09 s
+      Load contents of classes: 0.02 s
+      Snapshot Kotlin classes: 0.06 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.3 MB
+    Size of jar classpath entry's snapshot: 88.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/289f6e683f1cfe1265c17ac9407cb831/transformed/jetified-material-icons-core-release-api.jar' finished in 0.09 s
+Time metrics:
+  Classpath entry snapshot transform: 0.09 s
+    Load classes (paths only): 0.00 s
+    Snapshot classes: 0.08 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.06 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 1.9 MB
+    Size of jar classpath entry's snapshot: 76.2 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/d106ff34c9421f8a7c0f4d0b1937a6c5/transformed/jetified-animation-core-release-api.jar' finished in 0.07 s
+Time metrics:
+  Classpath entry snapshot transform: 0.07 s
+    Snapshot classes: 0.07 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.04 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 819.7 KB
+    Size of jar classpath entry's snapshot: 50.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/efd4f930e06d4f7634242361d5315443/transformed/jetified-ui-graphics-release-api.jar' finished in 0.06 s
+Time metrics:
+  Classpath entry snapshot transform: 0.06 s
+    Snapshot classes: 0.06 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.04 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 897.5 KB
+    Size of jar classpath entry's snapshot: 60.8 KB
+
+Task ':app:checkDebugAarMetadata' finished in 0.05 s
+Time metrics:
+  Total Gradle task time: 0.05 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/af60902982149d355853929d72ff5c69/transformed/jetified-ui-tooling-release-api.jar' finished in 0.04 s
+Time metrics:
+  Classpath entry snapshot transform: 0.04 s
+    Snapshot classes: 0.04 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.02 s
+    Save classpath entry snapshot: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 570.5 KB
+    Size of jar classpath entry's snapshot: 33.0 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/0d2803e9243183b13042699337552494/transformed/jetified-animation-release-api.jar' finished in 0.04 s
+Time metrics:
+  Classpath entry snapshot transform: 0.03 s
+    Snapshot classes: 0.03 s
+      Load contents of classes: 0.01 s
+      Snapshot Kotlin classes: 0.02 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 708.1 KB
+    Size of jar classpath entry's snapshot: 35.9 KB
+
+Task ':app:processDebugMainManifest' finished in 0.03 s
+Time metrics:
+  Total Gradle task time: 0.03 s
+
+Task ':app:mergeProjectDexDebug' finished in 0.03 s
+Time metrics:
+  Total Gradle task time: 0.03 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/Documents/Estudos/Aluvery/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar' finished in 0.03 s
+Time metrics:
+  Classpath entry snapshot transform: 0.03 s
+    Snapshot classes: 0.03 s
+      Load contents of classes: 0.01 s
+      Snapshot Java classes: 0.02 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 86.7 KB
+    Size of jar classpath entry's snapshot: 86.3 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/ab62f4466240ceea569b7fd823996702/transformed/jetified-ui-unit-release-api.jar' finished in 0.03 s
+Time metrics:
+  Classpath entry snapshot transform: 0.03 s
+    Snapshot classes: 0.03 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.02 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 178.3 KB
+    Size of jar classpath entry's snapshot: 13.2 KB
+
+Task ':app:mergeDebugAssets' finished in 0.02 s
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task ':app:mergeDebugNativeLibs' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.02 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/c10949cbe04db0a1b610903160c6880a/transformed/jetified-material-ripple-release-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.02 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 170.5 KB
+    Size of jar classpath entry's snapshot: 9.1 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/6b38295ae58b9dc4a04186428b154a41/transformed/jetified-ui-tooling-preview-release-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.02 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 33.4 KB
+    Size of jar classpath entry's snapshot: 5.7 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/278cb74685c9b9898f6dee72e88332e6/transformed/jetified-ui-util-release-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.01 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 30.1 KB
+    Size of jar classpath entry's snapshot: 2.5 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/46d3908e837cd7029dee712575ee6b62/transformed/jetified-runtime-saveable-release-api.jar' finished in 0.02 s
+Time metrics:
+  Classpath entry snapshot transform: 0.02 s
+    Snapshot classes: 0.01 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.01 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 117.5 KB
+    Size of jar classpath entry's snapshot: 8.2 KB
+
+Task ':app:mapDebugSourceSetPaths' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task ':app:processDebugJavaRes' finished in 0.01 s
+Time metrics:
+  Total Gradle task time: 0.01 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/80b7be330a92c8787ed7e49a1d097c99/transformed/jetified-ui-tooling-data-release-api.jar' finished in 0.01 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+    Snapshot classes: 0.00 s
+      Load contents of classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 82.3 KB
+    Size of jar classpath entry's snapshot: 4.8 KB
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/d62cd443d596c2018e79d0cc173078f7/transformed/jetified-ui-geometry-release-api.jar' finished in 0.00 s
+Time metrics:
+  Classpath entry snapshot transform: 0.00 s
+    Snapshot classes: 0.00 s
+      Snapshot Kotlin classes: 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 76.1 KB
+    Size of jar classpath entry's snapshot: 4.9 KB
+
+Task ':app:mergeDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeLibDexDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:packageDebugResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:parseDebugLocalResources' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:processDebugManifestForPackage' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:javaPreCompileDebug' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:mergeDebugShaders' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:compileDebugShaders' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:compressDebugAssets' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task 'ClasspathEntrySnapshotTransform for /Users/stephanie.pinheiro/.gradle/caches/transforms-3/033704d087a5fe32e8dcf69b74653b7b/transformed/jetified-ui-test-manifest-1.6.3-api.jar' finished in 0.00 s
+Size metrics:
+  Number of times 'ClasspathEntrySnapshotTransform' ran: 1
+    Size of jar classpath entry: 518 B
+    Size of jar classpath entry's snapshot: 218 B
+
+Task ':app:compileDebugJavaWithJavac' was skipped: NO-SOURCE
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:writeDebugAppMetadata' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugApkListingFileRedirect' finished in 0.00 s
+Time metrics:
+  Total Gradle task time: 0.00 s
+
+Task ':app:createDebugVariantModel' finished in 0.00 s
+
+Task ':app:preBuild' finished in 0.00 s
+
+Task ':app:preDebugBuild' finished in 0.00 s
+
+Task ':app:mergeDebugNativeDebugMetadata' was skipped: NO-SOURCE
+
+Task ':app:generateDebugResValues' finished in 0.00 s
+
+Task ':app:generateDebugResources' finished in 0.00 s
+
+Task ':app:createDebugCompatibleScreenManifests' finished in 0.00 s
+
+Task ':app:extractDeepLinksDebug' finished in 0.00 s
+
+Task ':app:processDebugManifest' finished in 0.00 s
+
+Task ':app:generateDebugAssets' finished in 0.00 s
+
+Task ':app:desugarDebugFileDependencies' finished in 0.00 s
+
+Task ':app:mergeDebugJniLibFolders' finished in 0.00 s
+
+Task ':app:stripDebugDebugSymbols' was skipped: NO-SOURCE
+
+Task ':app:validateSigningDebug' finished in 0.00 s
+
+Task ':app:writeDebugSigningConfigVersions' finished in 0.00 s
+
+Task ':app:assembleDebug' finished in 0.00 s
+
