@@ -42,43 +42,10 @@ class MainActivity : ComponentActivity() {
               ))
           }){
               val products = dao.products()
-              val sections = mapOf(
-                  "All products" to products,
-                  "Promotions" to sampleProductDrinks + sampleProductCandies,
-                  "Candies" to sampleProductCandies,
-                  "Drinks" to sampleProductDrinks
-              )
-              var text by remember {
-                  mutableStateOf("")
-              }
-              fun containsInNameOrDescription() = { product: Product ->
-                  product.name.contains(
-                      text,
-                      ignoreCase = true,
-                  ) || product.description?.contains(
-                      text,
-                      ignoreCase = true,
-                  ) ?: false
-              }
-              val searchedProducts = remember(text, products) {
-                  if (text.isNotBlank()) {
-                      sampleProducts.filter(containsInNameOrDescription()) +
-                              products.filter(containsInNameOrDescription())
-                  } else emptyList()
-              }
 
-              val state = remember(products, text) {
-                  HomeScreenUiState(
-                      sections = sections,
-                      searchedProducts = searchedProducts,
-                      searchText = text,
-                      onSearchChange = {
-                          text = it
-                      }
-                  )
-              }
-              HomeScreen(state)
+              HomeScreen(products = products)
           }
+
         }
     }
 }

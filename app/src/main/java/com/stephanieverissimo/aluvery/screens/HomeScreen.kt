@@ -28,6 +28,8 @@ import com.stephanieverissimo.aluvery.components.CardProductItem
 import com.stephanieverissimo.aluvery.components.ProductSection
 import com.stephanieverissimo.aluvery.components.SearchedText
 import com.stephanieverissimo.aluvery.models.Product
+import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
+import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
@@ -44,6 +46,46 @@ class HomeScreenUiState(
     }
 }
 
+@Composable
+fun HomeScreen(products: List<Product>) {
+    val sections = mapOf(
+        "All products" to products,
+        "Promotions" to sampleProductDrinks + sampleProductCandies,
+        "Candies" to sampleProductCandies,
+        "Drinks" to sampleProductDrinks
+    )
+    var text by remember {
+        mutableStateOf("")
+    }
+    fun containsInNameOrDescription() = { product: Product ->
+        product.name.contains(
+            text,
+            ignoreCase = true,
+        ) || product.description?.contains(
+            text,
+            ignoreCase = true,
+        ) ?: false
+    }
+    val searchedProducts = remember(text, products) {
+        if (text.isNotBlank()) {
+            sampleProducts.filter(containsInNameOrDescription()) +
+                    products.filter(containsInNameOrDescription())
+        } else emptyList()
+    }
+
+    val state = remember(products, text) {
+        HomeScreenUiState(
+            sections = sections,
+            searchedProducts = searchedProducts,
+            searchText = text,
+            onSearchChange = {
+                text = it
+            }
+        )
+    }
+    HomeScreen(state)
+
+}
 @Composable
 fun HomeScreen(
     state: HomeScreenUiState = HomeScreenUiState()
