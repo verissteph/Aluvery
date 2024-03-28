@@ -20,7 +20,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import androidx.compose.ui.unit.Dp
@@ -37,44 +36,49 @@ fun CardProductItem(
     product: Product,
     modifier: Modifier = Modifier,
     elevation: Dp = 4.dp,
-    expanded: Boolean = false,
+    isExpanded: Boolean = false,
 ) {
     var descriptionExpanded by remember {
-        mutableStateOf(expanded)
+        mutableStateOf(isExpanded)
     }
     Card(
         modifier
             .fillMaxWidth()
             .heightIn(150.dp)
-            .clickable { descriptionExpanded= !descriptionExpanded },
+            .clickable {
+                descriptionExpanded = !descriptionExpanded
+            },
         elevation = CardDefaults.cardElevation(elevation),
     ) {
         Column(modifier) {
-            AsyncImage(model = product.image,
-                       contentDescription = null,
-                       modifier
-                           .fillMaxWidth()
-                           .height(100.dp),
-                       placeholder = painterResource(id = R.drawable.placeholder),
-                       contentScale = ContentScale.Crop)
-            Column(modifier
-                       .fillMaxWidth()
-                       .background(MaterialTheme.colorScheme.primaryContainer)
-                       .padding(16.dp)) {
+            AsyncImage(
+                model = product.image,
+                contentDescription = null,
+                modifier
+                    .fillMaxWidth()
+                    .height(100.dp),
+                placeholder = painterResource(id = R.drawable.placeholder),
+                contentScale = ContentScale.Crop
+            )
+            Column(
+                modifier
+                    .fillMaxWidth()
+                    .background(MaterialTheme.colorScheme.primaryContainer)
+                    .padding(16.dp)
+            ) {
                 Text(text = product.name)
                 Text(text = product.price.toBrazilianCurrency())
             }
-            
-            val maxLines =  if(descriptionExpanded) Int.MAX_VALUE else 2
-            val overflow = if(descriptionExpanded) TextOverflow.Visible else TextOverflow.Ellipsis
-            
-            product.description?.let {
-                Text(text = product.description,
-                     modifier.padding(16.dp),
-                     maxLines = maxLines,
-                     overflow = overflow)
+            if (descriptionExpanded) {
+                product.description?.let {
+                    Text(
+                        text = product.description,
+                        Modifier
+                            .padding(16.dp)
+                    )
+                }
+
             }
-            
         }
     }
 }
@@ -94,9 +98,14 @@ private fun CardProductItemPreview() {
 private fun CardProductItemWithDescriptionPreview() {
     AluveryTheme {
         Surface {
-            CardProductItem(product = Product(name = "teste",
-                                              price = BigDecimal("10.99"),
-                                              description = LoremIpsum(50).values.first()))
+            CardProductItem(
+                product = Product(
+                    name = "teste",
+                    price = BigDecimal("10.99"),
+                    description = LoremIpsum(50).values.first()
+                ),
+                isExpanded = true,
+            )
         }
     }
 }
