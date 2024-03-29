@@ -1,4 +1,4 @@
-package com.stephanieverissimo.aluvery.components
+package com.stephanieverissimo.aluvery.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
