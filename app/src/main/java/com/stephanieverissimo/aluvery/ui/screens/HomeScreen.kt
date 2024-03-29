@@ -33,62 +33,17 @@ import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
 import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
+import com.stephanieverissimo.aluvery.ui.states.HomeScreenUiState
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 import com.stephanieverissimo.aluvery.ui.viewmodels.HomeScreenViewModel
 
-class HomeScreenUiState(
-    val sections: Map<String,
-            List<Product>> = emptyMap(),
-    val searchedProducts: List<Product> = emptyList(),
-    val searchText: String = "",
-    val onSearchChange: (String) -> Unit = {}
-) {
-    fun isShowSections(): Boolean {
-        return searchText.isBlank()
-    }
-}
 
 @Composable
 fun HomeScreen(
-    viewModel: HomeScreenViewModel,
-    products: List<Product>) {
-    val sections = mapOf(
-        "All products" to products,
-        "Promotions" to sampleProductDrinks + sampleProductCandies,
-        "Candies" to sampleProductCandies,
-        "Drinks" to sampleProductDrinks
-    )
-    var text by rememberSaveable {
-        mutableStateOf("")
-    }
-    fun containsInNameOrDescription() = { product: Product ->
-        product.name.contains(
-            text,
-            ignoreCase = true,
-        ) || product.description?.contains(
-            text,
-            ignoreCase = true,
-        ) ?: false
-    }
-    val searchedProducts = remember(text, products) {
-        if (text.isNotBlank()) {
-            sampleProducts.filter(containsInNameOrDescription()) +
-                    products.filter(containsInNameOrDescription())
-        } else emptyList()
-    }
+    viewModel: HomeScreenViewModel) {
 
      val state = viewModel.uiState
 
-//    val state = remember(products, text) {
-//        HomeScreenUiState(
-//            sections = sections,
-//            searchedProducts = searchedProducts,
-//            searchText = text,
-//            onSearchChange = {
-//                text = it
-//            }
-//        )
-//    }
     HomeScreen(state)
 
 }
