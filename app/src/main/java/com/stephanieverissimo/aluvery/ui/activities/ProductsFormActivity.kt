@@ -150,7 +150,7 @@ fun ProductsFormScreen(onSaveClick: (Product)-> Unit = {}) {
             )
         )
 
-        var description by remember {
+        var description by rememberSaveable {
             mutableStateOf("")
         }
         TextField(
