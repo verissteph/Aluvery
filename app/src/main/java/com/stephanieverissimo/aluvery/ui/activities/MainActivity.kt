@@ -27,7 +27,7 @@ import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.screens.HomeScreen
-import com.stephanieverissimo.aluvery.ui.screens.HomeScreenUiState
+import com.stephanieverissimo.aluvery.ui.states.HomeScreenUiState
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
 import com.stephanieverissimo.aluvery.ui.viewmodels.HomeScreenViewModel
 
@@ -37,24 +37,25 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-          App(onFabClick = {
-              startActivity(Intent(
-                  this,
-                  ProductsFormActivity::class.java
-              ))
-          }){
-              val products = dao.products()
-              val viewModel by viewModels<HomeScreenViewModel>()
+            App(onFabClick = {
+                startActivity(
+                    Intent(
+                        this,
+                        ProductsFormActivity::class.java
+                    )
+                )
+            }) {
+                val viewModel by viewModels<HomeScreenViewModel>()
 
-              HomeScreen(viewModel,products = products)
-          }
+                HomeScreen(viewModel)
+            }
 
         }
     }
 }
 
 @Composable
-fun App(onFabClick: () -> Unit = {}, content: @Composable ()->Unit = {}) {
+fun App(onFabClick: () -> Unit = {}, content: @Composable () -> Unit = {}) {
     AluveryTheme {
         Surface {
             Scaffold(floatingActionButton = {
@@ -64,7 +65,7 @@ fun App(onFabClick: () -> Unit = {}, content: @Composable ()->Unit = {}) {
 
             }) { paddingValues ->
                 Box(modifier = Modifier.padding(paddingValues)) {
-                   content()
+                    content()
                 }
             }
 
@@ -75,7 +76,7 @@ fun App(onFabClick: () -> Unit = {}, content: @Composable ()->Unit = {}) {
 @Preview
 @Composable
 private fun AppPreview() {
-    App(){
+    App() {
         HomeScreen(HomeScreenUiState(sections = sampleSections))
     }
 
