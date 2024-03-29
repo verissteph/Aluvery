@@ -47,14 +47,17 @@ import java.text.DecimalFormat
 @Composable
 fun ProductsFormScreen(
     viewModel: ProductFormScreenViewModel,
-    onSaveClick: (Product) -> Unit = {},
+    onSaveClick: () -> Unit = {},
 ) {
     val state by viewModel.uiState.collectAsState()
-    ProductsFormScreen(state = state)
+    ProductsFormScreen(state = state, onSaveClick = {
+        viewModel.save()
+        onSaveClick()
+    })
 }
 
 @Composable
-fun ProductsFormScreen(state: ProductFormUiState = ProductFormUiState()) {
+fun ProductsFormScreen(state: ProductFormUiState = ProductFormUiState(), onSaveClick: () -> Unit) {
     val url = state.url
     val name = state.name
     val price = state.price
@@ -134,7 +137,7 @@ fun ProductsFormScreen(state: ProductFormUiState = ProductFormUiState()) {
             )
         )
         Button(
-            onClick = state.onSaveClick,
+            onClick = onSaveClick,
             Modifier.fillMaxWidth(),
         ) {
             Text(text = "Save")
@@ -149,7 +152,7 @@ fun ProductsFormScreen(state: ProductFormUiState = ProductFormUiState()) {
 private fun ProductFormScreenPreview() {
     AluveryTheme {
         Surface {
-            ProductsFormScreen(state = ProductFormUiState())
+            ProductsFormScreen(state = ProductFormUiState(), onSaveClick = {})
         }
     }
 }
@@ -165,7 +168,8 @@ private fun ProductFormScreenFilledPreview() {
                     name = "nome teste",
                     price = "123",
                     description = "descrição teste"
-                )
+                ),
+                onSaveClick = {}
             )
         }
     }

@@ -56,8 +56,7 @@ class ProductsFormActivity : ComponentActivity() {
                 Surface {
                     val viewModel: ProductFormScreenViewModel by viewModels()
                     ProductsFormScreen(viewModel = viewModel,
-                        onSaveClick = { product ->
-                            dao.save(product)
+                        onSaveClick = {
                             finish()
                         })
                 }
