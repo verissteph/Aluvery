@@ -1,4 +1,4 @@
-package com.stephanieverissimo.aluvery.screens
+package com.stephanieverissimo.aluvery.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -25,15 +25,16 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.stephanieverissimo.aluvery.components.CardProductItem
-import com.stephanieverissimo.aluvery.components.ProductSection
-import com.stephanieverissimo.aluvery.components.SearchedText
+import com.stephanieverissimo.aluvery.ui.components.CardProductItem
+import com.stephanieverissimo.aluvery.ui.components.ProductSection
+import com.stephanieverissimo.aluvery.ui.components.SearchedText
 import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
 import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
+import com.stephanieverissimo.aluvery.ui.viewmodels.HomeScreenViewModel
 
 class HomeScreenUiState(
     val sections: Map<String,
@@ -48,7 +49,9 @@ class HomeScreenUiState(
 }
 
 @Composable
-fun HomeScreen(products: List<Product>) {
+fun HomeScreen(
+    viewModel: HomeScreenViewModel,
+    products: List<Product>) {
     val sections = mapOf(
         "All products" to products,
         "Promotions" to sampleProductDrinks + sampleProductCandies,
@@ -74,16 +77,18 @@ fun HomeScreen(products: List<Product>) {
         } else emptyList()
     }
 
-    val state = remember(products, text) {
-        HomeScreenUiState(
-            sections = sections,
-            searchedProducts = searchedProducts,
-            searchText = text,
-            onSearchChange = {
-                text = it
-            }
-        )
-    }
+     val state = viewModel.uiState
+
+//    val state = remember(products, text) {
+//        HomeScreenUiState(
+//            sections = sections,
+//            searchedProducts = searchedProducts,
+//            searchText = text,
+//            onSearchChange = {
+//                text = it
+//            }
+//        )
+//    }
     HomeScreen(state)
 
 }

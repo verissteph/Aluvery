@@ -1,4 +1,4 @@
-package com.stephanieverissimo.aluvery.screens
+package com.stephanieverissimo.aluvery.ui.screens
 
 import android.widget.Space
 import androidx.compose.foundation.layout.Arrangement
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.stephanieverissimo.aluvery.components.ProductItem
+import com.stephanieverissimo.aluvery.ui.components.ProductItem
 import com.stephanieverissimo.aluvery.models.Product
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
