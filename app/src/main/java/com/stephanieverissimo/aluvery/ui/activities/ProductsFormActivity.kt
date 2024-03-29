@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -38,7 +39,9 @@ import coil.compose.AsyncImage
 import com.stephanieverissimo.aluvery.R
 import com.stephanieverissimo.aluvery.dao.ProductDao
 import com.stephanieverissimo.aluvery.models.Product
+import com.stephanieverissimo.aluvery.ui.screens.ProductsFormScreen
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
+import com.stephanieverissimo.aluvery.ui.viewmodels.ProductFormScreenViewModel
 import java.lang.IllegalArgumentException
 import java.lang.NumberFormatException
 import java.math.BigDecimal
@@ -51,155 +54,14 @@ class ProductsFormActivity : ComponentActivity() {
         setContent {
             AluveryTheme {
                 Surface {
-                    ProductsFormScreen(onSaveClick = { product ->
-                        dao.save(product)
-                       finish()
-                    })
+                    val viewModel: ProductFormScreenViewModel by viewModels()
+                    ProductsFormScreen(viewModel = viewModel,
+                        onSaveClick = { product ->
+                            dao.save(product)
+                            finish()
+                        })
                 }
             }
-        }
-    }
-}
-
-@Composable
-fun ProductsFormScreen(onSaveClick: (Product)-> Unit = {}) {
-    Column(
-        Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp)
-            .verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
-    ) {
-        Spacer(modifier = Modifier)
-        Text(
-            text = "Product Creation",
-            Modifier
-                .fillMaxWidth(),
-            fontSize = 28.sp,
-        )
-
-        var url by rememberSaveable {
-            mutableStateOf("")
-        }
-
-        if (url.isNotBlank()) {
-            AsyncImage(
-                model = url,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp),
-                contentDescription = "image of url",
-                contentScale = ContentScale.Crop,
-                placeholder = painterResource(id = R.drawable.placeholder),
-                error = painterResource(id = R.drawable.placeholder),
-            )
-        }
-
-        TextField(
-            value = url, onValueChange = { url = it },
-            Modifier
-                .fillMaxWidth(),
-            label = { Text("Url") },
-            keyboardOptions = KeyboardOptions(
-                keyboardType = KeyboardType.Uri,
-                imeAction = ImeAction.Next
-            )
-        )
-
-
-        var name by rememberSaveable {
-            mutableStateOf("")
-        }
-        TextField(
-            value = name, onValueChange = { name = it },
-            Modifier
-                .fillMaxWidth(),
-            label = { Text("Name") },
-            keyboardOptions = KeyboardOptions(
-                keyboardType = KeyboardType.Text,
-                imeAction = ImeAction.Next,
-                capitalization = KeyboardCapitalization.Words
-            )
-        )
-
-        var price by rememberSaveable {
-            mutableStateOf("")
-        }
-        val formatter = remember {
-            DecimalFormat("#.##")
-        }
-
-        TextField(
-            value = price, onValueChange = {
-                try {
-                    price = formatter.format(BigDecimal(it))
-                } catch (e: IllegalArgumentException) {
-                    if (price.isEmpty()) {
-                        price = it
-                    }
-
-                }
-
-            },
-            Modifier
-                .fillMaxWidth(),
-            label = { Text("Price") },
-            keyboardOptions = KeyboardOptions(
-                keyboardType = KeyboardType.Decimal,
-                imeAction = ImeAction.Next
-            )
-        )
-
-        var description by rememberSaveable {
-            mutableStateOf("")
-        }
-        TextField(
-            value = description, onValueChange = { description = it },
-            Modifier
-                .fillMaxWidth()
-                .heightIn(min = 100.dp),
-            label = { Text("Description") },
-            keyboardOptions = KeyboardOptions(
-                keyboardType = KeyboardType.Text,
-                imeAction = ImeAction.Next,
-                capitalization = KeyboardCapitalization.Sentences
-            )
-        )
-
-        Button(
-            onClick = {
-                val converterBigDecimal = try {
-                    BigDecimal(price)
-                } catch (e: NumberFormatException) {
-                    BigDecimal.ZERO
-                }
-
-                val product = Product(
-                    name = name,
-                    price = converterBigDecimal,
-                    image = url,
-                    description = description,
-                )
-                Log.i("ProductForm", "ProductForm: $product")
-                onSaveClick(product)
-
-            },
-            Modifier
-                .fillMaxWidth()
-        ) {
-            Text(text = "Save")
-
-        }
-        Spacer(modifier = Modifier)
-    }
-}
-
-@Preview
-@Composable
-private fun ProductsFormScreenPreview() {
-    AluveryTheme {
-        Surface {
-            ProductsFormScreen()
         }
     }
 }
