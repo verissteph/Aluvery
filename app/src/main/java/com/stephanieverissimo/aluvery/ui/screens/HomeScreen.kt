@@ -8,30 +8,17 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.stephanieverissimo.aluvery.ui.components.CardProductItem
 import com.stephanieverissimo.aluvery.ui.components.ProductSection
 import com.stephanieverissimo.aluvery.ui.components.SearchedText
-import com.stephanieverissimo.aluvery.models.Product
-import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
-import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
-import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.sampleData.sampleSections
 import com.stephanieverissimo.aluvery.ui.states.HomeScreenUiState
 import com.stephanieverissimo.aluvery.ui.theme.AluveryTheme
@@ -42,9 +29,9 @@ import com.stephanieverissimo.aluvery.ui.viewmodels.HomeScreenViewModel
 fun HomeScreen(
     viewModel: HomeScreenViewModel) {
 
-     val state = viewModel.uiState
+     val state by viewModel.uiState.collectAsState()
 
-    HomeScreen(state)
+    HomeScreen(state = state)
 
 }
 @Composable
