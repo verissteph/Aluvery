@@ -1,9 +1,5 @@
 package com.stephanieverissimo.aluvery.ui.viewmodels
 
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.stephanieverissimo.aluvery.dao.ProductDao
@@ -12,33 +8,44 @@ import com.stephanieverissimo.aluvery.sampleData.sampleProductCandies
 import com.stephanieverissimo.aluvery.sampleData.sampleProductDrinks
 import com.stephanieverissimo.aluvery.sampleData.sampleProducts
 import com.stephanieverissimo.aluvery.ui.states.HomeScreenUiState
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class HomeScreenViewModel : ViewModel() {
     private val dao = ProductDao()
 
-    var uiState: HomeScreenUiState by mutableStateOf(
-        HomeScreenUiState(
-            onSearchChange = { newValue ->
-                uiState = uiState.copy(
-                    searchText = newValue,
-                    searchedProducts = searchedProducts(newValue)
-                )
-            }
-        )
+    private var _uiState: MutableStateFlow<HomeScreenUiState> = MutableStateFlow(
+        HomeScreenUiState()
     )
-        private set
+    val uiState get() = _uiState.asStateFlow()
+
+
+
 
     init {
+        _uiState.update { currentState ->
+            currentState.copy(
+                onSearchChange = {
+                    _uiState.value = _uiState.value.copy(
+                        searchText = it,
+                        searchedProducts = searchedProducts(it)
+                    )
+                }
+            )
+        }
+
         viewModelScope.launch {
             dao.products().collect { products ->
-                uiState = uiState.copy(
+                _uiState.value = _uiState.value.copy(
                     sections = mapOf(
                         "All products" to products,
                         "Promotions" to sampleProductDrinks + sampleProductCandies,
                         "Candies" to sampleProductCandies,
                         "Drinks" to sampleProductDrinks
-                    )
+                    ),
+                    searchedProducts = searchedProducts(_uiState.value.searchText)
                 )
             }
         }
